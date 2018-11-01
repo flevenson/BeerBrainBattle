@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: 'Lily Script One', cursive;
+}
+
+.heading-beer {
+  color: #2E2453;
+}
+
+.heading-brain {
+  color: #C7EAF0;
+}
+
+.heading-battle {
+  color: #F8BFA8;
+}
+
+main {
+  background-image: url('../../assets/beer-can.svg');
+  background-position: center;
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
+  height: 530px;
+}
