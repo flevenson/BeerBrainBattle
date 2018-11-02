@@ -16,7 +16,7 @@ export class QuestionControls extends Component {
   }
 
 
-  showCategories = () => {
+  toggleShowCategories = () => {
     this.setState({
       showCategories: !this.state.showCategories
     })
@@ -31,7 +31,7 @@ export class QuestionControls extends Component {
     })
   }
 
-  showDifficulty = () => {
+  toggleShowDifficulty = () => {
     this.setState({
       showDifficulty: !this.state.showDifficulty
     })
@@ -46,29 +46,38 @@ export class QuestionControls extends Component {
     })
   }  
 
+  handlePlayersChange = (event) => {
+    this.setState({
+      numPlayers: event.target.value
+    })
+  } 
+
   render() {
 
-  const categoryOptions = BeerData.categories.map(category => 
-    <li className={this.state.showCategories ? 'dropdown-option' : 'hidden' } onClick={this.setCategory}>{category}</li>
+  const { showDifficulty, showCategories, category, difficulty, numPlayers } = this.state;
+
+
+  const categoryOptions = BeerData.categories.map(categoryData => 
+    <li className={ showCategories ? 'dropdown-option' : 'hidden' } onClick={ this.setCategory }>{ categoryData } </li>
   )
 
     return(
       <form className='question-controls'>
         <div>
-          <div className='dropdown-title' onClick={this.showCategories}>{this.state.category.length ? this.state.category : 'Category' }</div>
+          <div className='dropdown-title' onClick={ this.toggleShowCategories}>{ category.length ? category : 'Category' }</div>
           <ul className='category-holder'>
             { categoryOptions }
           </ul>
         </div>
         <div>
-          <div className='dropdown-title' onClick={this.showDifficulty}>{this.state.difficulty.length ? this.state.difficulty : 'Difficulty'}</div>
+          <div className='dropdown-title' onClick={ this.toggleShowDifficulty}>{ difficulty.length ? difficulty : 'Difficulty'}</div>
           <ul>
-            <li className={this.state.showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Easy</li>
-            <li className={this.state.showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Medium</li>
-            <li className={this.state.showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Hard</li>
+            <li className={ showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Easy</li>
+            <li className={ showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Medium</li>
+            <li className={ showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Hard</li>
           </ul>
         </div>
-        <input className='dropdown-title' placeholder='Number Of Players'></input>
+        <input className='dropdown-title' placeholder='Number Of Players' value={ numPlayers } onChange={this.handlePlayersChange} ></input>
         <button className='dropdown-title'> Battle </button>
       </form>
     )
