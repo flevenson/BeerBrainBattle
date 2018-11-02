@@ -1,7 +1,7 @@
 header {
   display: flex;
   align-items: center;
-  height: 200px;
+  height: 150px;
   justify-content: center;
   font-size: 4rem;
   font-family: 'Lily Script One', cursive;
@@ -22,7 +22,10 @@ header {
 main {
   background-image: url('../../assets/beer-can.svg');
   background-position: center;
-  /*background-size: cover;*/
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 530px;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

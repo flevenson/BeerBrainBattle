@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
 import './App.css';
+import PropTypes from 'prop-types';
+import { Route, withRouter } from 'react-router-dom';
+import QuestionControls from '../QuestionControls';
+import { connect } from 'react-redux';
 
 class App extends Component {
   render() {
@@ -14,7 +18,7 @@ class App extends Component {
           </h1>
         </header>
         <main className='app-main'>
-          
+          <QuestionControls />
         </main>
       </div>
     );
