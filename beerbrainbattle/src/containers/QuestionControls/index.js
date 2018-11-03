@@ -5,10 +5,11 @@ import './QuestionControls.css';
 import PropTypes from 'prop-types';
 import * as BeerData from '../../assets/BeerData.js';
 import * as API from '../../utils'
+import { withRouter } from 'react-router';
 
 export class QuestionControls extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       category: '',
       difficulty: '',
@@ -61,7 +62,8 @@ export class QuestionControls extends Component {
     const question = await API.fetchRandomQuestion();
     this.props.addQuestion(question);
     this.props.addPlayers(this.state.numPlayers);
-  }
+    await this.props.history.push('/question')  
+}
 
   render() {
 
@@ -124,4 +126,4 @@ export const mapDispatchToProps = (dispatch) => ({
   addQuestion: (question) => dispatch(addQuestion(question))
 })
 
-export default connect(null, mapDispatchToProps)(QuestionControls)
+export default withRouter(connect(null, mapDispatchToProps)(QuestionControls))
