@@ -10,15 +10,31 @@ export const Question = (props) => {
   }
 
 
-  return (
-    <div>
-      <div className='question'>
-        <h1>{props.question.question}</h1>
+    
+  
+  if(props.question){
+
+  const answers = props.question.answers.map(answer => 
+    <button>{answer.answer}</button>
+  )
+    return (
+      <div className='question-holder'>
+        <div className='question'>
+          <h1>{props.question.question}</h1>
+        </div>
+        <div className='answers'>
+          { answers }
+        </div>
       </div>
+      )
 
-    </div>
-    )
-
+  }
+  else {
+    return (
+      <div>
+      </div>
+      )
+  }
 
 }
 
