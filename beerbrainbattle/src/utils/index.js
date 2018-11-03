@@ -6,7 +6,7 @@ export const fetchRandomQuestion = async () => {
   } else {
     const question = await response.json();
     const cleanedQuestion = cleanQuestion(question.results)
-    console.log(cleanedQuestion)
+    return cleanedQuestion
   }
 }
 
