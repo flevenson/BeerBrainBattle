@@ -1,8 +1,34 @@
+export const categories = [
+'General Knowledge', 
+'Books', 
+'Film', 
+'Music', 'Film', 
+
+'Musicals and Theatre',
+'Television',
+'Video Games',
+'Board Games',
+'Science and Nature',
+'Computers',
+'Math',
+'Mythology',
+'Sports',
+'Geography',
+'History',
+'Politics',
+'Art',
+'Celebrities',
+'Animals',
+'Vehicles',
+'Comics',
+'Anime and Manga',
+'Cartoons and AnimationB']
+
 const beerData = [
 
 {
   beerName: 'Vanilla Bean Assassin',
-  brewery: 'Toppling Goliath'
+  brewery: 'Toppling Goliath',
   year: 2013,
   value: 5000
 },
