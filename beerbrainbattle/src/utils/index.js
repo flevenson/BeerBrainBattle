@@ -29,6 +29,18 @@ export const cleanAnswers = (correctAnswer, incorrectAnswers) => {
     answer,
     correct: false
   }))
+
+
   const answers = [cleanCorrectAnswer, ...cleanIncorrectAnswers]
-  return answers
+
+
+
+  return randomizeAnswers(answers)
+}
+
+export const randomizeAnswers = (answers) => {
+    const spliceIndex = Math.floor(Math.random() * Math.floor(4));
+    const correctAnswer = answers.shift();
+    answers.splice(spliceIndex, 0, correctAnswer)
+    return answers
 }

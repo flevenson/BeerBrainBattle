@@ -12,7 +12,10 @@ export const Question = (props) => {
 
   return (
     <div>
-      <p>HIIIII</p>
+      <div className='question'>
+        <h1>{props.question.question}</h1>
+      </div>
+
     </div>
     )
 
