@@ -19,6 +19,19 @@ export const Question = (props) => {
       >{answer.answer}   {answer.numVotes}
     </button>
 )
+
+  const totalVotes = props.question.answers.reduce((allVotes, answer) => {
+    allVotes += answer.numVotes
+    return allVotes
+  }, 0)
+
+  console.log(totalVotes)
+
+  if(totalVotes === parseInt(props.players)) {
+    props.history.push('/answer')
+  }
+
+
     return (
       <div className='question-holder'>
         <div className='question'>
@@ -29,7 +42,6 @@ export const Question = (props) => {
         </div>
       </div>
       )
-
   }
   else {
     return (
