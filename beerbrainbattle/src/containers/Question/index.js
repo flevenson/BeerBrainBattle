@@ -12,11 +12,11 @@ export const Question = (props) => {
 
     
   
-  if(props.question){
+  if(Object.keys(props.question).length){
 
   const answers = props.question.answers.map(answer => 
-    <button>{answer.answer}</button>
-  )
+    <button>{answer.answer}   {answer.numVotes}</button>
+)
     return (
       <div className='question-holder'>
         <div className='question'>

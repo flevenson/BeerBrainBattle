@@ -24,10 +24,12 @@ export const cleanAnswers = (correctAnswer, incorrectAnswers) => {
   const cleanCorrectAnswer = {
     answer: correctAnswer,
     correct: true,
+    numVotes: 0
   }
   const cleanIncorrectAnswers = incorrectAnswers.map(answer => ({
     answer,
-    correct: false
+    correct: false,
+    numVotes: 0
   }))
 
 
