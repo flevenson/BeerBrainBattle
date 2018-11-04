@@ -27,7 +27,7 @@ export const Question = (props) => {
 
   console.log(totalVotes)
 
-  if(totalVotes === parseInt(props.players)) {
+  if(totalVotes === parseInt(props.players) && Object.keys(props.question).length) {
     props.history.push('/answer')
   }
 

@@ -1,5 +1,5 @@
 export const fetchRandomQuestion = async () => {
-  const url = 'https://opentdb.com/api.php?amount=1';
+  const url = 'https://opentdb.com/api.php?amount=1&type=multiple';
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(response.statusText)
