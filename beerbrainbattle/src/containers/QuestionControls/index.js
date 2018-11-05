@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addPlayers, addQuestion } from '../../actions'
 import './QuestionControls.css';
 import PropTypes from 'prop-types';
-import * as BeerData from '../../assets/BeerData.js'
+import * as BeerData from '../../assets/BeerData.js';
+import * as API from '../../utils'
+import { withRouter } from 'react-router';
 
 export class QuestionControls extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       category: '',
       difficulty: '',
@@ -50,7 +54,16 @@ export class QuestionControls extends Component {
     this.setState({
       numPlayers: event.target.value
     })
-  } 
+  }
+
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    const { players } = this.state
+    const question = await API.fetchRandomQuestion();
+    this.props.addQuestion(question);
+    this.props.addPlayers(this.state.numPlayers);
+    await this.props.history.push('/question')  
+}
 
   render() {
 
@@ -58,7 +71,13 @@ export class QuestionControls extends Component {
 
 
   const categoryOptions = BeerData.categories.map(categoryData => 
-    <li className={ showCategories ? 'dropdown-option' : 'hidden' } onClick={ this.setCategory }>{ categoryData } </li>
+    <li 
+      className={ 
+        showCategories 
+        ? 'dropdown-option' 
+        : 'hidden' } 
+      onClick={ this.setCategory }>{ categoryData } 
+    </li>
   )
 
     return(
@@ -72,16 +91,39 @@ export class QuestionControls extends Component {
         <div>
           <div className='dropdown-title' onClick={ this.toggleShowDifficulty}>{ difficulty.length ? difficulty : 'Difficulty'}</div>
           <ul>
-            <li className={ showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Easy</li>
-            <li className={ showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Medium</li>
-            <li className={ showDifficulty ? 'dropdown-option' : 'hidden'} onClick={this.setDifficulty}>Hard</li>
+            <li 
+              className={ 
+                showDifficulty 
+                ? 'dropdown-option' 
+                : 'hidden'} 
+              onClick={this.setDifficulty}>Easy
+            </li>
+            <li 
+              className={ 
+                showDifficulty 
+                ? 'dropdown-option' 
+                : 'hidden'} 
+              onClick={this.setDifficulty}>Medium
+            </li>
+            <li 
+              className={ 
+                showDifficulty 
+                ? 'dropdown-option' 
+                : 'hidden'} 
+              onClick={this.setDifficulty}>Hard
+            </li>
           </ul>
         </div>
         <input className='dropdown-title' placeholder='Number Of Players' value={ numPlayers } onChange={this.handlePlayersChange} ></input>
-        <button className='dropdown-title'> Battle </button>
+        <button className='dropdown-title' onClick={this.handleSubmit}> Battle </button>
       </form>
     )
   }
 }
 
-export default QuestionControls
+export const mapDispatchToProps = (dispatch) => ({
+  addPlayers: (players) => dispatch(addPlayers(players)),
+  addQuestion: (question) => dispatch(addQuestion(question))
+})
+
+export default withRouter(connect(null, mapDispatchToProps)(QuestionControls))

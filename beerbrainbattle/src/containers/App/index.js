@@ -4,6 +4,8 @@ import './App.css';
 import PropTypes from 'prop-types';
 import { Route, withRouter } from 'react-router-dom';
 import QuestionControls from '../QuestionControls';
+import Question from '../Question'
+import Answer from '../Answer'
 import { connect } from 'react-redux';
 
 class App extends Component {
@@ -18,7 +20,18 @@ class App extends Component {
           </h1>
         </header>
         <main className='app-main'>
-          <QuestionControls />
+          <Route 
+            exact path='/'
+            render={() => <QuestionControls />}
+          />
+          <Route 
+            exact path='/question'
+            render={() => <Question />}
+          />
+          <Route 
+            exact path='/answer'
+            render={() => <Answer />}
+          />
         </main>
       </div>
     );
