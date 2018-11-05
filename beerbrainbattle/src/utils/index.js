@@ -15,6 +15,7 @@ export const cleanQuestion = (question) => {
       category: question.category,
       difficulty: question.difficulty,
       question: question.question,
+      isCorrectlyAnswered: false,
       answers: cleanAnswers(question.correct_answer, question.incorrect_answers)
     }))
   

@@ -29,3 +29,31 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+.player-count {
+  font-size: 3rem;
+}
+
+.players {
+ font-size: 1.5rem
+
+}
+
+.app-heading {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-count-holder {
+  position: fixed;
+  right: 20px;
+  height: 100px;
+  width: 100px;
+  border: 2px solid #2E2453;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

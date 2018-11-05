@@ -14,9 +14,9 @@ export const Answer = (props) => {
   if(Object.keys(props.question).length){
     correctAnswer = props.question.answers.find(answer => answer.correct === true)
   return(
-    <div>
+    <div className='answer'>
       <p className='correct-answer-title'>The Correct Answer Is</p>
-      <p>{correctAnswer.answer}</p>
+      <p className='correct-answer-answer'>{correctAnswer.answer}</p>
     </div>
     )
   } else {

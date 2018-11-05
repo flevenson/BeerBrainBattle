@@ -21,7 +21,7 @@
   font-size: 1.1rem;
   background-color: #C7EAF0;
   color: #2E2453;
-  border: 2px solid #C7EAF0;
+  border: 2px solid #2E2453;
   border-radius: 5px;
 }
 
@@ -32,7 +32,9 @@
   color: #2E2453;
   border: none;
   width: 190px;
-  border-top: 1px #2E2453 solid; 
+  border-top: 1px solid #2E2453 ; 
+  border-left: 1px solid #2E2453 ; 
+  border-right: 1px solid #2E2453 ; 
 }
 
 .hidden {

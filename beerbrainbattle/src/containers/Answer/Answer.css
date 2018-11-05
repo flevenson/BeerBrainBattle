@@ -1,0 +1,15 @@
+.answer {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #C7EAF0;
+  color: #2E2453;
+  border: 2px solid #2E2453;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 1.1rem;
+  margin-top: 200px;
+}
