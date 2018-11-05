@@ -15,6 +15,7 @@ export const Question = (props) => {
 
   const answers = props.question.answers.map(answer => 
     <button 
+      className='answer-button'
       onClick={() => props.addVote(answer.answer)}
       >{answer.answer}   {answer.numVotes}
     </button>

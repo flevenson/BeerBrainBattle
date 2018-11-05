@@ -8,8 +8,8 @@ import Question from '../Question'
 import Answer from '../Answer'
 import { connect } from 'react-redux';
 
-class App extends Component {
-  render() {
+export const App = (props) => {
+
     return (
       <div className="App">
         <header>
@@ -18,6 +18,10 @@ class App extends Component {
             <span className='heading-brain'>Brain</span>
             <span className='heading-battle'>Battle</span>
           </h1>
+            <span className='player-count-holder'>
+                <h1 className='player-count'>{props.players}</h1>
+                <h1 className='players'>players</h1>
+            </span>
         </header>
         <main className='app-main'>
           <Route 
@@ -34,8 +38,16 @@ class App extends Component {
           />
         </main>
       </div>
-    );
-  }
+    )
+
 }
 
-export default App;
+export const mapStateToProps = (state) => ({
+  players: state.players
+})
+
+// export const mapDispatchToProps = (dispatch) => ({
+
+// })
+
+export default withRouter(connect(mapStateToProps)(App));
