@@ -59,6 +59,11 @@ export class QuestionControls extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const { players, category, difficulty } = this.state
+    if(this.props.players !== 0){
+      this.setState({
+        numPlayers: this.props.players
+      })
+    }
     const question = await API.fetchRandomQuestion(category, difficulty);
     this.props.addQuestion(question);
     this.props.addPlayers(this.state.numPlayers);
@@ -114,16 +119,20 @@ export class QuestionControls extends Component {
             </li>
           </ul>
         </div>
-        <input className='dropdown-title' placeholder='Number Of Players' value={ numPlayers } onChange={this.handlePlayersChange} ></input>
+        <input className={this.props.players ? 'hidden' : 'dropdown-title'} placeholder='Number Of Players' value={ numPlayers } onChange={this.handlePlayersChange} ></input>
         <button className='dropdown-title' onClick={this.handleSubmit}> Battle </button>
       </form>
     )
   }
 }
 
+export const mapStateToProps = (state) => ({
+  players: state.players
+})
+
 export const mapDispatchToProps = (dispatch) => ({
   addPlayers: (players) => dispatch(addPlayers(players)),
   addQuestion: (question) => dispatch(addQuestion(question))
 })
 
-export default withRouter(connect(null, mapDispatchToProps)(QuestionControls))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(QuestionControls))

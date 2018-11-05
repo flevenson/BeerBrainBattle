@@ -14,9 +14,13 @@ export const Answer = (props) => {
   if(Object.keys(props.question).length){
     correctAnswer = props.question.answers.find(answer => answer.correct === true)
   return(
-    <div className='answer'>
-      <p className='correct-answer-title'>The Correct Answer Is</p>
-      <p className='correct-answer-answer'>{correctAnswer.answer}</p>
+    <div className='answer-container'>
+      <div className='answer'>
+        <p className='correct-answer-title'>The Correct Answer Is</p>
+        <p className='correct-answer-answer'>{correctAnswer.answer}</p>
+
+      </div>
+      <button onClick={() => props.history.push('/')} className='next-round'>Next Round</button>
     </div>
     )
   } else {

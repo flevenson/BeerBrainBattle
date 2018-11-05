@@ -30,7 +30,9 @@ export const Question = (props) => {
 
   if(totalVotes === parseInt(props.players) && Object.keys(props.question).length) {
     const correctAnswer = props.question.answers.find(answer => answer.correct === true)
-    props.filterPlayers(correctAnswer.numVotes)
+    if(correctAnswer.numVotes !== 0){
+      props.filterPlayers(correctAnswer.numVotes)
+    }
     props.history.push('/answer')
   }
 

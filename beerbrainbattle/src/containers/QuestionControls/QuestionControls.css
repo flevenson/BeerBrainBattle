@@ -41,3 +41,7 @@
   height: 0px;
   overflow: hidden;
 }
+
+input.hidden {
+  display: none;
+}
