@@ -3,7 +3,11 @@ import { categoriesIDs } from '../assets/BeerData.js'
 export const fetchRandomQuestion = async (category, difficulty) => {
   let url;
   if(category.length && !difficulty.length){
-    url = `https://opentdb.com/api.php?amount=1&category=${categoriesIDs[category]}`
+    url = `https://opentdb.com/api.php?amount=1&category=${categoriesIDs[category]}&type=multiple`
+  } else if (!category.length && difficulty.length){
+    url = `https://opentdb.com/api.php?amount=1&difficulty=${difficulty.toLowerCase()}&type=multiple`
+  } else if (category.length && difficulty.length){
+    url = `https://opentdb.com/api.php?amount=1&category=${categoriesIDs[category]}&difficulty=${difficulty.toLowerCase()}&type=multiple`
   } else {
     url = 'https://opentdb.com/api.php?amount=1&type=multiple';
   }
