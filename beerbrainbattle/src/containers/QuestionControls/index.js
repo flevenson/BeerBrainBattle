@@ -58,8 +58,8 @@ export class QuestionControls extends Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    const { players } = this.state
-    const question = await API.fetchRandomQuestion();
+    const { players, category, difficulty } = this.state
+    const question = await API.fetchRandomQuestion(category, difficulty);
     this.props.addQuestion(question);
     this.props.addPlayers(this.state.numPlayers);
     await this.props.history.push('/question')  

@@ -46,6 +46,7 @@ main {
 }
 
 .player-count-holder {
+  color: #2E2453;
   position: fixed;
   right: 20px;
   height: 100px;

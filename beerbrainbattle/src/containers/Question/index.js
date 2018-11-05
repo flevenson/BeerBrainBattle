@@ -3,7 +3,7 @@ import './Question.css';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-import { addVote } from '../../actions'
+import { addVote, filterPlayers } from '../../actions'
 
 export const Question = (props) => {
 
@@ -29,6 +29,8 @@ export const Question = (props) => {
   console.log(totalVotes)
 
   if(totalVotes === parseInt(props.players) && Object.keys(props.question).length) {
+    const correctAnswer = props.question.answers.find(answer => answer.correct === true)
+    props.filterPlayers(correctAnswer.numVotes)
     props.history.push('/answer')
   }
 
@@ -60,6 +62,7 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   addVote: (answer) => dispatch(addVote(answer)),
+  filterPlayers: (players) => dispatch(filterPlayers(players))
 })
 
 

@@ -1,5 +1,12 @@
-export const fetchRandomQuestion = async () => {
-  const url = 'https://opentdb.com/api.php?amount=1&type=multiple';
+import { categoriesIDs } from '../assets/BeerData.js'
+
+export const fetchRandomQuestion = async (category, difficulty) => {
+  let url;
+  if(category.length && !difficulty.length){
+    url = `https://opentdb.com/api.php?amount=1&category=${categoriesIDs[category]}`
+  } else {
+    url = 'https://opentdb.com/api.php?amount=1&type=multiple';
+  }
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(response.statusText)
@@ -14,7 +21,7 @@ export const cleanQuestion = (question) => {
   return question.map(question => ({
       category: question.category,
       difficulty: question.difficulty,
-      question: question.question,
+      question: question.question.replace(/&quot;/g,'"').replace(/&#039;/g,"'").replace(/&mp;/g,"&"),
       isCorrectlyAnswered: false,
       answers: cleanAnswers(question.correct_answer, question.incorrect_answers)
     }))
@@ -23,12 +30,12 @@ export const cleanQuestion = (question) => {
 
 export const cleanAnswers = (correctAnswer, incorrectAnswers) => {
   const cleanCorrectAnswer = {
-    answer: correctAnswer,
+    answer: correctAnswer.replace(/&quot;/g,'"').replace(/&#039;/g,"'").replace(/&mp;/g,"&"),
     correct: true,
     numVotes: 0
   }
   const cleanIncorrectAnswers = incorrectAnswers.map(answer => ({
-    answer,
+    answer: answer.replace(/&quot;/g,'"').replace(/&#039;/g,"'").replace(/&mp;/g,"&"),
     correct: false,
     numVotes: 0
   }))
