@@ -12,3 +12,8 @@ export const addVote = (answer) => ({
   type: 'ADD_VOTE',
   answer
 })
+
+export const filterPlayers = (players) => ({
+  type: 'FILTER_PLAYERS',
+  players
+})
