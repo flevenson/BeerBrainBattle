@@ -2,7 +2,7 @@ import React from 'react';
 import './GameOver.css';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { addPlayers } from '../../actions';
+import { addPlayers, addPrize } from '../../actions';
 import { withRouter } from 'react-router';
 
 export const GameOver = (props) => {
@@ -26,6 +26,7 @@ export const GameOver = (props) => {
       <button 
         onClick={() => {
           props.addPlayers(0)
+          props.addPrize('')
           props.history.push('/')
         }} 
         className='next-round'>Play Again!</button>
@@ -49,6 +50,7 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   addPlayers: (players) => dispatch(addPlayers(players)),
+  addPrize: (prize) => dispatch(addPrize(prize))
 })
 
 GameOver.propTypes = {
