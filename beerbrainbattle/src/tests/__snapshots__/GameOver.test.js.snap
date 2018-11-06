@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameOver GameOver Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GameOver
+    question={
+      Object {
+        "answers": Array [
+          Object {
+            "answer": "5",
+            "correct": false,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "2",
+            "correct": false,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "4",
+            "correct": true,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "0",
+            "correct": false,
+            "numVotes": 0,
+          },
+        ],
+        "category": "Math",
+        "difficulty": "Easy",
+        "isCorrectlyAnswered": false,
+        "question": "What is Two plus Two",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="answer"
+        >
+          <h1
+            className="game-over"
+          >
+            GAME OVER
+          </h1>
+          <p
+            className="correct-answer-title"
+          >
+            The Correct Answer Was:
+          </p>
+          <p
+            className="correct-answer-answer"
+          >
+            4
+          </p>
+          <p
+            className="award"
+          >
+            You Won 
+          </p>
+        </div>,
+        <button
+          className="next-round"
+          onClick={[Function]}
+        >
+          Play Again!
+        </button>,
+      ],
+      "className": "answer-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="game-over"
+            >
+              GAME OVER
+            </h1>,
+            <p
+              className="correct-answer-title"
+            >
+              The Correct Answer Was:
+            </p>,
+            <p
+              className="correct-answer-answer"
+            >
+              4
+            </p>,
+            <p
+              className="award"
+            >
+              You Won 
+            </p>,
+          ],
+          "className": "answer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "GAME OVER",
+              "className": "game-over",
+            },
+            "ref": null,
+            "rendered": "GAME OVER",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "The Correct Answer Was:",
+              "className": "correct-answer-title",
+            },
+            "ref": null,
+            "rendered": "The Correct Answer Was:",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "4",
+              "className": "correct-answer-answer",
+            },
+            "ref": null,
+            "rendered": "4",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "You Won ",
+                undefined,
+              ],
+              "className": "award",
+            },
+            "ref": null,
+            "rendered": Array [
+              "You Won ",
+              undefined,
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Play Again!",
+          "className": "next-round",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Play Again!",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="answer"
+          >
+            <h1
+              className="game-over"
+            >
+              GAME OVER
+            </h1>
+            <p
+              className="correct-answer-title"
+            >
+              The Correct Answer Was:
+            </p>
+            <p
+              className="correct-answer-answer"
+            >
+              4
+            </p>
+            <p
+              className="award"
+            >
+              You Won 
+            </p>
+          </div>,
+          <button
+            className="next-round"
+            onClick={[Function]}
+          >
+            Play Again!
+          </button>,
+        ],
+        "className": "answer-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="game-over"
+              >
+                GAME OVER
+              </h1>,
+              <p
+                className="correct-answer-title"
+              >
+                The Correct Answer Was:
+              </p>,
+              <p
+                className="correct-answer-answer"
+              >
+                4
+              </p>,
+              <p
+                className="award"
+              >
+                You Won 
+              </p>,
+            ],
+            "className": "answer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "GAME OVER",
+                "className": "game-over",
+              },
+              "ref": null,
+              "rendered": "GAME OVER",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "The Correct Answer Was:",
+                "className": "correct-answer-title",
+              },
+              "ref": null,
+              "rendered": "The Correct Answer Was:",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "4",
+                "className": "correct-answer-answer",
+              },
+              "ref": null,
+              "rendered": "4",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "You Won ",
+                  undefined,
+                ],
+                "className": "award",
+              },
+              "ref": null,
+              "rendered": Array [
+                "You Won ",
+                undefined,
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Play Again!",
+            "className": "next-round",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Play Again!",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
