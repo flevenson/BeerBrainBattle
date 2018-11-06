@@ -166,7 +166,8 @@ export class QuestionControls extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  players: state.players
+  players: state.players,
+  prize: state.prize
 })
 
 export const mapDispatchToProps = (dispatch) => ({

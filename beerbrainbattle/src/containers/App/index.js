@@ -18,7 +18,7 @@ export const App = (props) => {
             <span className='heading-brain'>Brain</span>
             <span className='heading-battle'>Battle</span>
           </h1>
-            <span className='player-count-holder'>
+            <span className={props.players ?  'player-count-holder' : 'hidden'}>
                 <h1 className='player-count'>{props.players}</h1>
                 <h1 className='players'>players</h1>
             </span>
