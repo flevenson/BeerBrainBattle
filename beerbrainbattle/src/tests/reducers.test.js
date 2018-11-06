@@ -54,6 +54,15 @@ describe('reducers', () =>{
       expect(result).toEqual(expected)
     })
 
+    it('should filter players when a question is answered', ()=> {
+
+      const initialState = mockPlayers;
+      const expected = 3;
+      const result = playersReducer(initialState, Actions.filterPlayers(3))
+
+      expect(result).toEqual(expected)
+    })
+
   })
 
   describe('prizeReducer', () => {
@@ -65,6 +74,14 @@ describe('reducers', () =>{
       expect(result).toEqual(expected);
     })
 
+    it('should return state with a prize', () => {
+      const initialState = '';
+      const expected = mockPrize;
+
+      const result = prizeReducer(initialState, Actions.addPrize(mockPrize))
+
+      expect(result).toEqual(expected)
+    })
 
   })
 })
