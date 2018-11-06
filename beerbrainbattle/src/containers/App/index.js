@@ -4,8 +4,9 @@ import './App.css';
 import PropTypes from 'prop-types';
 import { Route, withRouter } from 'react-router-dom';
 import QuestionControls from '../QuestionControls';
-import Question from '../Question'
-import Answer from '../Answer'
+import Question from '../Question';
+import Answer from '../Answer';
+import GameOver from '../GameOver';
 import { connect } from 'react-redux';
 
 export const App = (props) => {
@@ -35,6 +36,10 @@ export const App = (props) => {
           <Route 
             exact path='/answer'
             render={() => <Answer />}
+          />
+          <Route
+            exact path='/gameOver'
+            render={() => <GameOver />}
           />
         </main>
       </div>

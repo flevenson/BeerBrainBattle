@@ -1,10 +1,12 @@
 import React from 'react';
-import './Answer.css';
-import PropTypes from 'prop-types';
+import './GameOver.css';
+import Proptypes from 'prop-types';
 import { connect } from 'react-redux';
+import { addPlayers } from '../../actions';
 import { withRouter } from 'react-router';
 
-export const Answer = (props) => {
+export const GameOver = (props) => {
+
   if(!Object.keys(props.question).length){
     props.history.push('/')
   } 
@@ -16,11 +18,17 @@ export const Answer = (props) => {
   return(
     <div className='answer-container'>
       <div className='answer'>
-        <p className='correct-answer-title'>The Correct Answer Is:</p>
+        <h1 className='game-over'>GAME OVER</h1>
+        <p className='correct-answer-title'>The Correct Answer Was:</p>
         <p className='correct-answer-answer'>{correctAnswer.answer}</p>
 
       </div>
-      <button onClick={() => props.history.push('/')} className='next-round'>Next Round</button>
+      <button 
+        onClick={() => {
+          props.addPlayers(0)
+          props.history.push('/')
+        }} 
+        className='next-round'>Play Again!</button>
     </div>
     )
   } else {
@@ -30,6 +38,7 @@ export const Answer = (props) => {
     )
   }
 
+
 }
 
 export const mapStateToProps = (state) => ({
@@ -37,4 +46,8 @@ export const mapStateToProps = (state) => ({
   question: state.question
 })
 
-export default withRouter(connect(mapStateToProps)(Answer))
+export const mapDispatchToProps = (dispatch) => ({
+  addPlayers: (players) => dispatch(addPlayers(players)),
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(GameOver))

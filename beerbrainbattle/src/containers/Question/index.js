@@ -33,7 +33,12 @@ export const Question = (props) => {
     if(correctAnswer.numVotes !== 0){
       props.filterPlayers(correctAnswer.numVotes)
     }
-    props.history.push('/answer')
+    if(correctAnswer.numVotes === 1){
+      props.history.push('/gameOver')
+    } else {
+      props.history.push('/answer')
+    }
+    
   }
 
 
