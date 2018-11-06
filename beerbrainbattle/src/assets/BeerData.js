@@ -50,7 +50,7 @@ export const categoriesIDs = {
   'Cartoons and Animation': 32
 }
 
-const beerData = [
+export const beerData = [
 
 {
   beerName: 'Vanilla Bean Assassin',

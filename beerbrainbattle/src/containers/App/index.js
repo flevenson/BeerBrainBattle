@@ -42,7 +42,7 @@ export const App = (props) => {
           />
         </main>
         <footer>
-          <h1 className={props.prize.length ? 'prize-text' : 'hidden'}>Current Wager: {props.prize}</h1>
+          <h1 className={props.prize.length ? 'prize-text' : 'hidden'}>Current Prize: {props.prize}</h1>
         </footer>
       </div>
     )

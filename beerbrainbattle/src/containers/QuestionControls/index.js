@@ -14,6 +14,7 @@ export class QuestionControls extends Component {
       category: '',
       difficulty: '',
       numPlayers: '',
+      prize: '',
       showCategories: false,
       showDifficulty: false,
     }
@@ -68,9 +69,19 @@ export class QuestionControls extends Component {
     const question = await API.fetchRandomQuestion(category, difficulty);
     this.props.addQuestion(question);
     this.props.addPlayers(numPlayers);
-    this.props.addPrize(prize)
+    this.makePrize();
     await this.props.history.push('/question')  
 }
+
+  makePrize = () => {
+    if(!this.state.prize.length) {
+      const randomBeer = BeerData.beerData[Math.floor(Math.random() * 100)]
+      const randomPrize = `${randomBeer.year} ${randomBeer.beerName} from  ${randomBeer.brewery} worth $${randomBeer.value}`
+      this.props.addPrize(randomPrize)
+    } else {
+      this.props.addPrize(this.state.prize)
+    }
+  }
 
   render() {
 

@@ -4,6 +4,7 @@ import Proptypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addPlayers } from '../../actions';
 import { withRouter } from 'react-router';
+import * as BeerData from '../../assets/BeerData.js';
 
 export const GameOver = (props) => {
 
@@ -21,7 +22,7 @@ export const GameOver = (props) => {
         <h1 className='game-over'>GAME OVER</h1>
         <p className='correct-answer-title'>The Correct Answer Was:</p>
         <p className='correct-answer-answer'>{correctAnswer.answer}</p>
-
+        <p className='award'>You Won {props.prize}</p>
       </div>
       <button 
         onClick={() => {
@@ -43,7 +44,8 @@ export const GameOver = (props) => {
 
 export const mapStateToProps = (state) => ({
   players: state.players,
-  question: state.question
+  question: state.question,
+  prize: state.prize
 })
 
 export const mapDispatchToProps = (dispatch) => ({
