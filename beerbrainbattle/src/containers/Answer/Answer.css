@@ -24,6 +24,11 @@
   color: #2E2453;
   border: 2px solid #2E2453;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-round:hover {
+  background-color: #F8BFA8;
 }
 
 .answer-container {

@@ -16,7 +16,7 @@ export const Answer = (props) => {
   return(
     <div className='answer-container'>
       <div className='answer'>
-        <p className='correct-answer-title'>The Correct Answer Is</p>
+        <p className='correct-answer-title'>The Correct Answer Is:</p>
         <p className='correct-answer-answer'>{correctAnswer.answer}</p>
 
       </div>

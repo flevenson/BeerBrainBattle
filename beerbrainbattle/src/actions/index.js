@@ -17,3 +17,8 @@ export const filterPlayers = (players) => ({
   type: 'FILTER_PLAYERS',
   players
 })
+
+export const addPrize = (prize) => ({
+  type: 'ADD_PRIZE',
+  prize
+})

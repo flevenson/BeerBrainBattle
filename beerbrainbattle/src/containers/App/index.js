@@ -4,12 +4,12 @@ import './App.css';
 import PropTypes from 'prop-types';
 import { Route, withRouter } from 'react-router-dom';
 import QuestionControls from '../QuestionControls';
-import Question from '../Question'
-import Answer from '../Answer'
+import Question from '../Question';
+import Answer from '../Answer';
+import GameOver from '../GameOver';
 import { connect } from 'react-redux';
 
 export const App = (props) => {
-
     return (
       <div className="App">
         <header>
@@ -18,7 +18,7 @@ export const App = (props) => {
             <span className='heading-brain'>Brain</span>
             <span className='heading-battle'>Battle</span>
           </h1>
-            <span className='player-count-holder'>
+            <span className={props.players ?  'player-count-holder' : 'hidden'}>
                 <h1 className='player-count'>{props.players}</h1>
                 <h1 className='players'>players</h1>
             </span>
@@ -36,14 +36,22 @@ export const App = (props) => {
             exact path='/answer'
             render={() => <Answer />}
           />
+          <Route
+            exact path='/gameOver'
+            render={() => <GameOver />}
+          />
         </main>
+        <footer>
+          <h1 className={props.prize.length ? 'prize-text' : 'hidden'}>Current Prize: {props.prize}</h1>
+        </footer>
       </div>
     )
 
 }
 
 export const mapStateToProps = (state) => ({
-  players: state.players
+  players: state.players,
+  prize: state.prize
 })
 
 // export const mapDispatchToProps = (dispatch) => ({

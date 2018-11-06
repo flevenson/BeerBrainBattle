@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addPlayers, addQuestion } from '../../actions'
+import { addPlayers, addQuestion, addPrize } from '../../actions'
 import './QuestionControls.css';
 import PropTypes from 'prop-types';
 import * as BeerData from '../../assets/BeerData.js';
@@ -14,6 +14,7 @@ export class QuestionControls extends Component {
       category: '',
       difficulty: '',
       numPlayers: '',
+      prize: '',
       showCategories: false,
       showDifficulty: false,
     }
@@ -50,29 +51,47 @@ export class QuestionControls extends Component {
     })
   }  
 
-  handlePlayersChange = (event) => {
-    this.setState({
-      numPlayers: event.target.value
-    })
+  handleInputChange = (event) => {
+    if(event.target.name === 'numPlayers'){
+      this.setState({
+        numPlayers: event.target.value
+      })
+    } else if (event.target.name === 'prize'){
+      this.setState({
+        prize: event.target.value
+      })
+    }
   }
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    const { players, category, difficulty } = this.state
-    if(this.props.players !== 0){
-      this.setState({
-        numPlayers: this.props.players
-      })
-    }
+    const { players, category, difficulty, numPlayers, prize } = this.state
     const question = await API.fetchRandomQuestion(category, difficulty);
     this.props.addQuestion(question);
-    this.props.addPlayers(this.state.numPlayers);
-    await this.props.history.push('/question')  
+    if(this.props.players !== 0 || this.props.players === '') {
+      this.props.addPlayers(this.props.players);
+    } else {
+      this.props.addPlayers(numPlayers);
+    }
+    this.makePrize();
+    this.props.history.push('/question')  
 }
+
+  makePrize = () => {
+    if(!this.state.prize.length && !this.props.prize) {
+      const randomBeer = BeerData.beerData[Math.floor(Math.random() * 100)]
+      const randomPrize = `${randomBeer.year} ${randomBeer.beerName} from  ${randomBeer.brewery} worth $${randomBeer.value}`
+      this.props.addPrize(randomPrize)
+    } else if (!this.props.prize){
+      this.props.addPrize(this.state.prize)
+    } else {
+      this.props.addPrize(this.props.prize)
+    }
+  }
 
   render() {
 
-  const { showDifficulty, showCategories, category, difficulty, numPlayers } = this.state;
+  const { showDifficulty, showCategories, category, difficulty, numPlayers, prize } = this.state;
 
 
   const categoryOptions = BeerData.categories.map(categoryData => 
@@ -119,7 +138,20 @@ export class QuestionControls extends Component {
             </li>
           </ul>
         </div>
-        <input className={this.props.players ? 'hidden' : 'dropdown-title'} placeholder='Number Of Players' value={ numPlayers } onChange={this.handlePlayersChange} ></input>
+        <input 
+          className={this.props.players ? 'hidden' : 'dropdown-title'} 
+          placeholder='Number Of Players' 
+          value={ numPlayers } 
+          onChange={this.handleInputChange} 
+          name='numPlayers'>
+        </input>
+        <input 
+          className={this.props.prize ? 'hidden' : 'dropdown-title'} 
+          placeholder='What will you Wager?' 
+          value={ prize } 
+          onChange={this.handleInputChange}
+          name='prize'>
+        </input>
         <button className='dropdown-title' onClick={this.handleSubmit}> Battle </button>
       </form>
     )
@@ -127,12 +159,14 @@ export class QuestionControls extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  players: state.players
+  players: state.players,
+  prize: state.prize
 })
 
 export const mapDispatchToProps = (dispatch) => ({
   addPlayers: (players) => dispatch(addPlayers(players)),
-  addQuestion: (question) => dispatch(addQuestion(question))
+  addQuestion: (question) => dispatch(addQuestion(question)),
+  addPrize: (prize) => dispatch(addPrize(prize))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(QuestionControls))
