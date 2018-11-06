@@ -31,5 +31,15 @@
     "enzyme-to-json": "^3.3.4",
     "jest": "^23.6.0",
     "prop-types": "^15.6.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/setupTests.js",
+      "!src/assets/BeerData.js",
+      "!src/reducers/index.js"
+   ] 
   }
 }
