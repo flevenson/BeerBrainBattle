@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addPlayers, addQuestion } from '../../actions'
+import { addPlayers, addQuestion, addPrize } from '../../actions'
 import './QuestionControls.css';
 import PropTypes from 'prop-types';
 import * as BeerData from '../../assets/BeerData.js';
@@ -50,15 +50,16 @@ export class QuestionControls extends Component {
     })
   }  
 
-  handlePlayersChange = (event) => {
+  handleInputChange = (event) => {
+    const { name, value } = event.target
     this.setState({
-      numPlayers: event.target.value
+      [name]: value
     })
   }
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    const { players, category, difficulty } = this.state
+    const { players, category, difficulty, numPlayers, prize } = this.state
     if(this.props.players !== 0){
       this.setState({
         numPlayers: this.props.players
@@ -66,13 +67,14 @@ export class QuestionControls extends Component {
     }
     const question = await API.fetchRandomQuestion(category, difficulty);
     this.props.addQuestion(question);
-    this.props.addPlayers(this.state.numPlayers);
+    this.props.addPlayers(numPlayers);
+    this.props.addPrize(prize)
     await this.props.history.push('/question')  
 }
 
   render() {
 
-  const { showDifficulty, showCategories, category, difficulty, numPlayers } = this.state;
+  const { showDifficulty, showCategories, category, difficulty, numPlayers, prize } = this.state;
 
 
   const categoryOptions = BeerData.categories.map(categoryData => 
@@ -119,7 +121,20 @@ export class QuestionControls extends Component {
             </li>
           </ul>
         </div>
-        <input className={this.props.players ? 'hidden' : 'dropdown-title'} placeholder='Number Of Players' value={ numPlayers } onChange={this.handlePlayersChange} ></input>
+        <input 
+          className={this.props.players ? 'hidden' : 'dropdown-title'} 
+          placeholder='Number Of Players' 
+          value={ numPlayers } 
+          onChange={this.handleInputChange} 
+          name='numPlayers'>
+        </input>
+        <input 
+          className={this.props.prize ? 'hidden' : 'dropdown-title'} 
+          placeholder='What will you Wager?' 
+          value={ prize } 
+          onChange={this.handleInputChange}
+          name='prize'>
+        </input>
         <button className='dropdown-title' onClick={this.handleSubmit}> Battle </button>
       </form>
     )
@@ -132,7 +147,8 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   addPlayers: (players) => dispatch(addPlayers(players)),
-  addQuestion: (question) => dispatch(addQuestion(question))
+  addQuestion: (question) => dispatch(addQuestion(question)),
+  addPrize: (prize) => dispatch(addPrize(prize))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(QuestionControls))
