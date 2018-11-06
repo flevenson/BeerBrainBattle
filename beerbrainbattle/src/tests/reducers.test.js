@@ -2,7 +2,7 @@ import { questionReducer } from '../reducers/questionReducer';
 import { playersReducer } from '../reducers/playersReducer';
 import { prizeReducer } from '../reducers/prizeReducer';
 import * as Actions from '../actions';
-import { mockQuestion, mockPlayers, mockAnswer, mockPrize } from './testMocks';
+import { mockQuestion, mockPlayers, mockAnswer, mockPrize, mockVotedQuestion } from './testMocks';
 
 
 describe('reducers', () =>{
@@ -14,6 +14,25 @@ describe('reducers', () =>{
 
       expect(result).toEqual(expected);
     })
+
+    it('should return state with a question', () => {
+      const initialState = {};
+      const expected = mockQuestion[0];
+
+      const result = questionReducer(initialState, Actions.addQuestion(mockQuestion))
+
+      expect(result).toEqual(expected)
+
+  })
+    it('should update state when an answer recieves a vote', () => {
+      const initialState = mockQuestion[0];
+      const expected = mockVotedQuestion[0];
+
+      const result = questionReducer(initialState, Actions.addVote(mockAnswer.answer))
+
+      expect(result).toEqual(expected)
+
+  })
 
   })
 
