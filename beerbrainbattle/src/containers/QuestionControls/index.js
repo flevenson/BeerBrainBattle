@@ -84,7 +84,7 @@ export class QuestionControls extends Component {
 }
 
   makePrize = () => {
-    
+
     const { prize, addPrize } = this.props;
 
 
@@ -180,7 +180,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 QuestionControls.propTypes = {
-  players: PropTypes.number.isRequired,
+  players: PropTypes.number,
   prize: PropTypes.string.isRequired,
   addPlayers: PropTypes.func.isRequired,
   addQuestion: PropTypes.func.isRequired,

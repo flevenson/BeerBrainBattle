@@ -1,0 +1,488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question Question Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Question
+    question={
+      Object {
+        "answers": Array [
+          Object {
+            "answer": "5",
+            "correct": false,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "2",
+            "correct": false,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "4",
+            "correct": true,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "0",
+            "correct": false,
+            "numVotes": 0,
+          },
+        ],
+        "category": "Math",
+        "difficulty": "Easy",
+        "isCorrectlyAnswered": false,
+        "question": "What is Two plus Two",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="question"
+        >
+          <h1>
+            What is Two plus Two
+          </h1>
+        </div>,
+        <div
+          className="answers"
+        >
+          <button
+            className="answer-button"
+            onClick={[Function]}
+          >
+            5
+               
+            0
+          </button>
+          <button
+            className="answer-button"
+            onClick={[Function]}
+          >
+            2
+               
+            0
+          </button>
+          <button
+            className="answer-button"
+            onClick={[Function]}
+          >
+            4
+               
+            0
+          </button>
+          <button
+            className="answer-button"
+            onClick={[Function]}
+          >
+            0
+               
+            0
+          </button>
+        </div>,
+      ],
+      "className": "question-holder",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1>
+            What is Two plus Two
+          </h1>,
+          "className": "question",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "What is Two plus Two",
+          },
+          "ref": null,
+          "rendered": "What is Two plus Two",
+          "type": "h1",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              5
+                 
+              0
+            </button>,
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              2
+                 
+              0
+            </button>,
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              4
+                 
+              0
+            </button>,
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              0
+                 
+              0
+            </button>,
+          ],
+          "className": "answers",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "5",
+                "   ",
+                0,
+              ],
+              "className": "answer-button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "5",
+              "   ",
+              0,
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2",
+                "   ",
+                0,
+              ],
+              "className": "answer-button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "2",
+              "   ",
+              0,
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "4",
+                "   ",
+                0,
+              ],
+              "className": "answer-button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "4",
+              "   ",
+              0,
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "0",
+                "   ",
+                0,
+              ],
+              "className": "answer-button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "0",
+              "   ",
+              0,
+            ],
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="question"
+          >
+            <h1>
+              What is Two plus Two
+            </h1>
+          </div>,
+          <div
+            className="answers"
+          >
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              5
+                 
+              0
+            </button>
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              2
+                 
+              0
+            </button>
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              4
+                 
+              0
+            </button>
+            <button
+              className="answer-button"
+              onClick={[Function]}
+            >
+              0
+                 
+              0
+            </button>
+          </div>,
+        ],
+        "className": "question-holder",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              What is Two plus Two
+            </h1>,
+            "className": "question",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "What is Two plus Two",
+            },
+            "ref": null,
+            "rendered": "What is Two plus Two",
+            "type": "h1",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="answer-button"
+                onClick={[Function]}
+              >
+                5
+                   
+                0
+              </button>,
+              <button
+                className="answer-button"
+                onClick={[Function]}
+              >
+                2
+                   
+                0
+              </button>,
+              <button
+                className="answer-button"
+                onClick={[Function]}
+              >
+                4
+                   
+                0
+              </button>,
+              <button
+                className="answer-button"
+                onClick={[Function]}
+              >
+                0
+                   
+                0
+              </button>,
+            ],
+            "className": "answers",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "5",
+                  "   ",
+                  0,
+                ],
+                "className": "answer-button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                "5",
+                "   ",
+                0,
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2",
+                  "   ",
+                  0,
+                ],
+                "className": "answer-button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                "2",
+                "   ",
+                0,
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "4",
+                  "   ",
+                  0,
+                ],
+                "className": "answer-button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                "4",
+                "   ",
+                0,
+              ],
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "0",
+                  "   ",
+                  0,
+                ],
+                "className": "answer-button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                "0",
+                "   ",
+                0,
+              ],
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

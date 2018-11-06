@@ -1,0 +1,2101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionControls QuestionControls Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <QuestionControls />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <div
+            className="dropdown-title"
+            onClick={[Function]}
+          >
+            Category
+          </div>
+          <ul
+            className="category-holder"
+          >
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              General Knowledge
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Books
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Film
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Music
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Film
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Musicals and Theatre
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Television
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Video Games
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Board Games
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Science and Nature
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Computers
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Math
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Mythology
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Sports
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Geography
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              History
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Politics
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Art
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Celebrities
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Animals
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Vehicles
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Comics
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Anime and Manga
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Cartoons and Animation
+            </li>
+          </ul>
+        </div>,
+        <div>
+          <div
+            className="dropdown-title"
+            onClick={[Function]}
+          >
+            Difficulty
+          </div>
+          <ul>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Easy
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Medium
+            </li>
+            <li
+              className="hidden"
+              onClick={[Function]}
+            >
+              Hard
+            </li>
+          </ul>
+        </div>,
+        <input
+          className="dropdown-title"
+          name="numPlayers"
+          onChange={[Function]}
+          placeholder="Number Of Players"
+          value=""
+        />,
+        <input
+          className="dropdown-title"
+          name="prize"
+          onChange={[Function]}
+          placeholder="What will you Wager?"
+          value=""
+        />,
+        <button
+          className="dropdown-title"
+          onClick={[Function]}
+        >
+           Battle 
+        </button>,
+      ],
+      "className": "question-controls",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="dropdown-title"
+              onClick={[Function]}
+            >
+              Category
+            </div>,
+            <ul
+              className="category-holder"
+            >
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                General Knowledge
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Books
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Film
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Music
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Film
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Musicals and Theatre
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Television
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Video Games
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Board Games
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Science and Nature
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Computers
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Math
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Mythology
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Sports
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Geography
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                History
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Politics
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Art
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Celebrities
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Animals
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Vehicles
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Comics
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Anime and Manga
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Cartoons and Animation
+              </li>
+            </ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Category",
+              "className": "dropdown-title",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Category",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  General Knowledge
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Books
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Film
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Music
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Film
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Musicals and Theatre
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Television
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Video Games
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Board Games
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Science and Nature
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Computers
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Math
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Mythology
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Sports
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Geography
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  History
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Politics
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Art
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Celebrities
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Animals
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Vehicles
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Comics
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Anime and Manga
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Cartoons and Animation
+                </li>,
+              ],
+              "className": "category-holder",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "General Knowledge",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "General Knowledge",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Books",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Books",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Film",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Film",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Music",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Music",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Film",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Film",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Musicals and Theatre",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Musicals and Theatre",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Television",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Television",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Video Games",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Video Games",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Board Games",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Board Games",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Science and Nature",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Science and Nature",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Computers",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Computers",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Math",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Math",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mythology",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Mythology",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Sports",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Sports",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Geography",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Geography",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "History",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "History",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Politics",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Politics",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Art",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Art",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Celebrities",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Celebrities",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Animals",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Animals",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Vehicles",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Vehicles",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Comics",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Comics",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Anime and Manga",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Anime and Manga",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Cartoons and Animation",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Cartoons and Animation",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="dropdown-title"
+              onClick={[Function]}
+            >
+              Difficulty
+            </div>,
+            <ul>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Easy
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Medium
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Hard
+              </li>
+            </ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Difficulty",
+              "className": "dropdown-title",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Difficulty",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Easy
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Medium
+                </li>,
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Hard
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Easy",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Easy",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Medium",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Medium",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Hard",
+                  "className": "hidden",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Hard",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "dropdown-title",
+          "name": "numPlayers",
+          "onChange": [Function],
+          "placeholder": "Number Of Players",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "dropdown-title",
+          "name": "prize",
+          "onChange": [Function],
+          "placeholder": "What will you Wager?",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Battle ",
+          "className": "dropdown-title",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": " Battle ",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <div
+              className="dropdown-title"
+              onClick={[Function]}
+            >
+              Category
+            </div>
+            <ul
+              className="category-holder"
+            >
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                General Knowledge
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Books
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Film
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Music
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Film
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Musicals and Theatre
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Television
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Video Games
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Board Games
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Science and Nature
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Computers
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Math
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Mythology
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Sports
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Geography
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                History
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Politics
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Art
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Celebrities
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Animals
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Vehicles
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Comics
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Anime and Manga
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Cartoons and Animation
+              </li>
+            </ul>
+          </div>,
+          <div>
+            <div
+              className="dropdown-title"
+              onClick={[Function]}
+            >
+              Difficulty
+            </div>
+            <ul>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Easy
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Medium
+              </li>
+              <li
+                className="hidden"
+                onClick={[Function]}
+              >
+                Hard
+              </li>
+            </ul>
+          </div>,
+          <input
+            className="dropdown-title"
+            name="numPlayers"
+            onChange={[Function]}
+            placeholder="Number Of Players"
+            value=""
+          />,
+          <input
+            className="dropdown-title"
+            name="prize"
+            onChange={[Function]}
+            placeholder="What will you Wager?"
+            value=""
+          />,
+          <button
+            className="dropdown-title"
+            onClick={[Function]}
+          >
+             Battle 
+          </button>,
+        ],
+        "className": "question-controls",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="dropdown-title"
+                onClick={[Function]}
+              >
+                Category
+              </div>,
+              <ul
+                className="category-holder"
+              >
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  General Knowledge
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Books
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Film
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Music
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Film
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Musicals and Theatre
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Television
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Video Games
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Board Games
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Science and Nature
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Computers
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Math
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Mythology
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Sports
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Geography
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  History
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Politics
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Art
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Celebrities
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Animals
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Vehicles
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Comics
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Anime and Manga
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Cartoons and Animation
+                </li>
+              </ul>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Category",
+                "className": "dropdown-title",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Category",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    General Knowledge
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Books
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Film
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Music
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Film
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Musicals and Theatre
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Television
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Video Games
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Board Games
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Science and Nature
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Computers
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Math
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Mythology
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Sports
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Geography
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    History
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Politics
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Art
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Celebrities
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Animals
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Vehicles
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Comics
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Anime and Manga
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Cartoons and Animation
+                  </li>,
+                ],
+                "className": "category-holder",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "General Knowledge",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "General Knowledge",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Books",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Books",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Film",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Film",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Music",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Music",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Film",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Film",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Musicals and Theatre",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Musicals and Theatre",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Television",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Television",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Video Games",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Video Games",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Board Games",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Board Games",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Science and Nature",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Science and Nature",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Computers",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Computers",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Math",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Math",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mythology",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Mythology",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Sports",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Sports",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Geography",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Geography",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "History",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "History",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Politics",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Politics",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Art",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Art",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Celebrities",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Celebrities",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Animals",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Animals",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Vehicles",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Vehicles",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Comics",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Comics",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Anime and Manga",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Anime and Manga",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Cartoons and Animation",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Cartoons and Animation",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="dropdown-title"
+                onClick={[Function]}
+              >
+                Difficulty
+              </div>,
+              <ul>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Easy
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Medium
+                </li>
+                <li
+                  className="hidden"
+                  onClick={[Function]}
+                >
+                  Hard
+                </li>
+              </ul>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Difficulty",
+                "className": "dropdown-title",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Difficulty",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Easy
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Medium
+                  </li>,
+                  <li
+                    className="hidden"
+                    onClick={[Function]}
+                  >
+                    Hard
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Easy",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Easy",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Medium",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Medium",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Hard",
+                    "className": "hidden",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Hard",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "dropdown-title",
+            "name": "numPlayers",
+            "onChange": [Function],
+            "placeholder": "Number Of Players",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "dropdown-title",
+            "name": "prize",
+            "onChange": [Function],
+            "placeholder": "What will you Wager?",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Battle ",
+            "className": "dropdown-title",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": " Battle ",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

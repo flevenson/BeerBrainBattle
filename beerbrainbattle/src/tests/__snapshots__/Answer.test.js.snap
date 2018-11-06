@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Answer Answer Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Answer
+    question={
+      Object {
+        "answers": Array [
+          Object {
+            "answer": "5",
+            "correct": false,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "2",
+            "correct": false,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "4",
+            "correct": true,
+            "numVotes": 0,
+          },
+          Object {
+            "answer": "0",
+            "correct": false,
+            "numVotes": 0,
+          },
+        ],
+        "category": "Math",
+        "difficulty": "Easy",
+        "isCorrectlyAnswered": false,
+        "question": "What is Two plus Two",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="answer"
+        >
+          <p
+            className="correct-answer-title"
+          >
+            The Correct Answer Is:
+          </p>
+          <p
+            className="correct-answer-answer"
+          >
+            4
+          </p>
+        </div>,
+        <button
+          className="next-round"
+          onClick={[Function]}
+        >
+          Next Round
+        </button>,
+      ],
+      "className": "answer-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="correct-answer-title"
+            >
+              The Correct Answer Is:
+            </p>,
+            <p
+              className="correct-answer-answer"
+            >
+              4
+            </p>,
+          ],
+          "className": "answer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "The Correct Answer Is:",
+              "className": "correct-answer-title",
+            },
+            "ref": null,
+            "rendered": "The Correct Answer Is:",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "4",
+              "className": "correct-answer-answer",
+            },
+            "ref": null,
+            "rendered": "4",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Next Round",
+          "className": "next-round",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Next Round",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="answer"
+          >
+            <p
+              className="correct-answer-title"
+            >
+              The Correct Answer Is:
+            </p>
+            <p
+              className="correct-answer-answer"
+            >
+              4
+            </p>
+          </div>,
+          <button
+            className="next-round"
+            onClick={[Function]}
+          >
+            Next Round
+          </button>,
+        ],
+        "className": "answer-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="correct-answer-title"
+              >
+                The Correct Answer Is:
+              </p>,
+              <p
+                className="correct-answer-answer"
+              >
+                4
+              </p>,
+            ],
+            "className": "answer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "The Correct Answer Is:",
+                "className": "correct-answer-title",
+              },
+              "ref": null,
+              "rendered": "The Correct Answer Is:",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "4",
+                "className": "correct-answer-answer",
+              },
+              "ref": null,
+              "rendered": "4",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Next Round",
+            "className": "next-round",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Next Round",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
