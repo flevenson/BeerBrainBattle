@@ -23,6 +23,11 @@
   flex-direction: column;
   height: 200px;
   justify-content: space-between;
+
+}
+
+.answer-button:hover {
+  background-color: #F8BFA8;
 }
 
 .answer-button {
@@ -35,4 +40,5 @@
   color: #2E2453;
   border: 2px solid #2E2453;
   border-radius: 5px;
+  cursor: pointer;
 }

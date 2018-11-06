@@ -23,6 +23,11 @@
   color: #2E2453;
   border: 2px solid #2E2453;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-title:hover, .dropdown-option:hover {
+  background-color: #F8BFA8;
 }
 
 .dropdown-option {
@@ -35,6 +40,7 @@
   border-top: 1px solid #2E2453 ; 
   border-left: 1px solid #2E2453 ; 
   border-right: 1px solid #2E2453 ; 
+  cursor: pointer;
 }
 
 .hidden {
