@@ -52,25 +52,30 @@ export class QuestionControls extends Component {
   }  
 
   handleInputChange = (event) => {
-    const { name, value } = event.target
-    this.setState({
-      [name]: value
-    })
+    if(event.target.name === 'numPlayers'){
+      this.setState({
+        numPlayers: event.target.value
+      })
+    } else if (event.target.name === 'prize'){
+      this.setState({
+        prize: event.target.value
+      })
+    }
   }
 
   handleSubmit = async (event) => {
     event.preventDefault();
     const { players, category, difficulty, numPlayers, prize } = this.state
-    if(this.props.players !== 0){
-      this.setState({
-        numPlayers: this.props.players
-      })
-    }
     const question = await API.fetchRandomQuestion(category, difficulty);
     this.props.addQuestion(question);
-    this.props.addPlayers(numPlayers);
+    // this.keepPlayers();
+    if(this.props.players !== 0 || this.props.players === '') {
+      this.props.addPlayers(this.props.players);
+    } else {
+      this.props.addPlayers(numPlayers);
+    }
     this.makePrize();
-    await this.props.history.push('/question')  
+    this.props.history.push('/question')  
 }
 
   makePrize = () => {
@@ -80,6 +85,14 @@ export class QuestionControls extends Component {
       this.props.addPrize(randomPrize)
     } else {
       this.props.addPrize(this.state.prize)
+    }
+  }
+
+  keepPlayers = () => {
+    if(this.props.players !== 0 || this.props.players === '') {
+      this.setState({
+        numPlayers: this.props.players
+      })
     }
   }
 
