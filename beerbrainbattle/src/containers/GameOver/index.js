@@ -1,10 +1,9 @@
 import React from 'react';
 import './GameOver.css';
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addPlayers } from '../../actions';
 import { withRouter } from 'react-router';
-import * as BeerData from '../../assets/BeerData.js';
 
 export const GameOver = (props) => {
 
@@ -51,5 +50,12 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   addPlayers: (players) => dispatch(addPlayers(players)),
 })
+
+GameOver.propTypes = {
+  players: PropTypes.number.isRequired,
+  prize: PropTypes.string.isRequired,
+  question:PropTypes.object.isRequired,
+  addPlayers: PropTypes.func.isRequired
+}
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(GameOver))

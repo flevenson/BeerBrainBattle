@@ -28,6 +28,7 @@ export class QuestionControls extends Component {
   }
 
   setCategory = (event) => {
+
     const category = event.target.innerText
 
     this.setState({
@@ -43,6 +44,7 @@ export class QuestionControls extends Component {
   }
 
   setDifficulty = (event) => {
+
     const difficulty = event.target.innerText
 
     this.setState({
@@ -65,27 +67,35 @@ export class QuestionControls extends Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    const { players, category, difficulty, numPlayers, prize } = this.state
+
+    const { category, difficulty, numPlayers } = this.state;
+    const { addQuestion, addPlayers, players, history} = this.props
+
     const question = await API.fetchRandomQuestion(category, difficulty);
-    this.props.addQuestion(question);
-    if(this.props.players !== 0 || this.props.players === '') {
-      this.props.addPlayers(this.props.players);
+    addQuestion(question);
+
+    if( players !== 0 || players === '') {
+      addPlayers(this.props.players);
     } else {
-      this.props.addPlayers(numPlayers);
+      addPlayers(numPlayers);
     }
     this.makePrize();
-    this.props.history.push('/question')  
+    history.push('/question')  
 }
 
   makePrize = () => {
-    if(!this.state.prize.length && !this.props.prize) {
+    
+    const { prize, addPrize } = this.props;
+
+
+    if(!this.state.prize.length && !prize) {
       const randomBeer = BeerData.beerData[Math.floor(Math.random() * 100)]
       const randomPrize = `${randomBeer.year} ${randomBeer.beerName} from  ${randomBeer.brewery} worth $${randomBeer.value}`
-      this.props.addPrize(randomPrize)
-    } else if (!this.props.prize){
-      this.props.addPrize(this.state.prize)
+      addPrize(randomPrize)
+    } else if (!prize){
+      addPrize(this.state.prize)
     } else {
-      this.props.addPrize(this.props.prize)
+      addPrize(prize)
     }
   }
 
@@ -168,5 +178,13 @@ export const mapDispatchToProps = (dispatch) => ({
   addQuestion: (question) => dispatch(addQuestion(question)),
   addPrize: (prize) => dispatch(addPrize(prize))
 })
+
+QuestionControls.propTypes = {
+  players: PropTypes.number.isRequired,
+  prize: PropTypes.string.isRequired,
+  addPlayers: PropTypes.func.isRequired,
+  addQuestion: PropTypes.func.isRequired,
+  addPrize: PropTypes.func.isRequired,
+}
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(QuestionControls))

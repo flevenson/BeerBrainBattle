@@ -29,12 +29,16 @@ export const Answer = (props) => {
       </div>
     )
   }
-
 }
 
 export const mapStateToProps = (state) => ({
   players: state.players,
   question: state.question
 })
+
+Answer.propTypes = {
+  players: PropTypes.number.isRequired,
+  question: PropTypes.object.isRequired,
+}
 
 export default withRouter(connect(mapStateToProps)(Answer))

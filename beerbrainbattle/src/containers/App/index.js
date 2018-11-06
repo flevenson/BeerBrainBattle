@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import logo from '../../logo.svg';
+import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 import { Route, withRouter } from 'react-router-dom';
@@ -54,8 +53,9 @@ export const mapStateToProps = (state) => ({
   prize: state.prize
 })
 
-// export const mapDispatchToProps = (dispatch) => ({
-
-// })
+App.propTypes = {
+  players: PropTypes.number.isRequired,
+  prize: PropTypes.string.isRequired
+}
 
 export default withRouter(connect(mapStateToProps)(App));
