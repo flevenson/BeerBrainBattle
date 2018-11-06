@@ -45,6 +45,15 @@ describe('reducers', () =>{
       expect(result).toEqual(expected);
     })
 
+    it('should return state with users', () => {
+      
+      const initialState = 0;
+      const expected = mockPlayers;
+      const result = playersReducer(initialState, Actions.addPlayers(mockPlayers));
+
+      expect(result).toEqual(expected)
+    })
+
   })
 
   describe('prizeReducer', () => {
