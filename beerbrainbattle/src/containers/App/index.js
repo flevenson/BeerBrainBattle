@@ -54,7 +54,7 @@ export const mapStateToProps = (state) => ({
 })
 
 App.propTypes = {
-  players: PropTypes.number.isRequired,
+  players: PropTypes.number,
   prize: PropTypes.string.isRequired
 }
 

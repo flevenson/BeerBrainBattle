@@ -37,7 +37,7 @@ export const mapStateToProps = (state) => ({
 })
 
 Answer.propTypes = {
-  players: PropTypes.number.isRequired,
+  players: PropTypes.number,
   question: PropTypes.object.isRequired,
 }
 

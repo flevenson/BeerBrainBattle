@@ -68,7 +68,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 Question.propTypes = {
-  players: PropTypes.number.isRequired,
+  players: PropTypes.number,
   question: PropTypes.object.isRequired,
   addVote: PropTypes.func.isRequired,
   filterPlayers: PropTypes.func.isRequired
