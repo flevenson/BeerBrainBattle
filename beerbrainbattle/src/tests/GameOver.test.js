@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { mockQuestion } from './testMocks.js';
+import { mockQuestion, mockPlayers, mockPrize } from './testMocks.js';
 import { GameOver, mapStateToProps, mapDispatchToProps } from '../containers/GameOver';
 import * as Actions from '../actions';
 
@@ -10,9 +10,11 @@ describe('GameOver', () => {
   beforeEach(() => {
     wrapper = shallow(<GameOver
       question={ mockQuestion[0] } 
+      players={ mockPlayers }
+      prize={ mockPrize }
+      addPlayers={jest.fn()}
         />);
-      
-  })
+      })
 
   describe('GameOver Component', () => {
     it('should match the snapshot', () => {

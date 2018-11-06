@@ -10,7 +10,10 @@ describe('Question', () => {
 
   beforeEach(() => {
     wrapper = shallow(<Question 
-        question={mockQuestion[0]} />);
+      question={mockQuestion[0]} 
+      addVote={jest.fn()}
+      filterPlayers={jest.fn()}
+    />);
   })
 
   describe('Question Component', () => {

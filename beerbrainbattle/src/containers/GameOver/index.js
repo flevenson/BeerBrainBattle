@@ -38,8 +38,6 @@ export const GameOver = (props) => {
       </div>
     )
   }
-
-
 }
 
 export const mapStateToProps = (state) => ({

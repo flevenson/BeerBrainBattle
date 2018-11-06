@@ -109,7 +109,8 @@ export class QuestionControls extends Component {
       className={ 
         showCategories 
         ? 'dropdown-option' 
-        : 'hidden' } 
+        : 'hidden' }
+      key={ categoryData } 
       onClick={ this.setCategory }>{ categoryData } 
     </li>
   )

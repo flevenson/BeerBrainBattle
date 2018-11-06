@@ -3,7 +3,12 @@
 exports[`QuestionControls QuestionControls Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <QuestionControls />,
+  Symbol(enzyme.__unrendered__): <QuestionControls
+    addPlayers={[MockFunction]}
+    addPrize={[MockFunction]}
+    addQuestion={[MockFunction]}
+    prize="1 Whole Beer"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -210,7 +215,7 @@ ShallowWrapper {
           value=""
         />,
         <input
-          className="dropdown-title"
+          className="hidden"
           name="prize"
           onChange={[Function]}
           placeholder="What will you Wager?"
@@ -561,7 +566,7 @@ ShallowWrapper {
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "General Knowledge",
                 "nodeType": "host",
                 "props": Object {
                   "children": "General Knowledge",
@@ -574,7 +579,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Books",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Books",
@@ -587,7 +592,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Film",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Film",
@@ -600,7 +605,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Music",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Music",
@@ -613,7 +618,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Film",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Film",
@@ -626,7 +631,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Musicals and Theatre",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Musicals and Theatre",
@@ -639,7 +644,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Television",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Television",
@@ -652,7 +657,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Video Games",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Video Games",
@@ -665,7 +670,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Board Games",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Board Games",
@@ -678,7 +683,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Science and Nature",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Science and Nature",
@@ -691,7 +696,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Computers",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Computers",
@@ -704,7 +709,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Math",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Math",
@@ -717,7 +722,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Mythology",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Mythology",
@@ -730,7 +735,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Sports",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Sports",
@@ -743,7 +748,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Geography",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Geography",
@@ -756,7 +761,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "History",
                 "nodeType": "host",
                 "props": Object {
                   "children": "History",
@@ -769,7 +774,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Politics",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Politics",
@@ -782,7 +787,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Art",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Art",
@@ -795,7 +800,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Celebrities",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Celebrities",
@@ -808,7 +813,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Animals",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Animals",
@@ -821,7 +826,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Vehicles",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Vehicles",
@@ -834,7 +839,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Comics",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Comics",
@@ -847,7 +852,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Anime and Manga",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Anime and Manga",
@@ -860,7 +865,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "Cartoons and Animation",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Cartoons and Animation",
@@ -1019,7 +1024,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "dropdown-title",
+          "className": "hidden",
           "name": "prize",
           "onChange": [Function],
           "placeholder": "What will you Wager?",
@@ -1244,7 +1249,7 @@ ShallowWrapper {
             value=""
           />,
           <input
-            className="dropdown-title"
+            className="hidden"
             name="prize"
             onChange={[Function]}
             placeholder="What will you Wager?"
@@ -1595,7 +1600,7 @@ ShallowWrapper {
               "rendered": Array [
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "General Knowledge",
                   "nodeType": "host",
                   "props": Object {
                     "children": "General Knowledge",
@@ -1608,7 +1613,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Books",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Books",
@@ -1621,7 +1626,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Film",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Film",
@@ -1634,7 +1639,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Music",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Music",
@@ -1647,7 +1652,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Film",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Film",
@@ -1660,7 +1665,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Musicals and Theatre",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Musicals and Theatre",
@@ -1673,7 +1678,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Television",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Television",
@@ -1686,7 +1691,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Video Games",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Video Games",
@@ -1699,7 +1704,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Board Games",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Board Games",
@@ -1712,7 +1717,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Science and Nature",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Science and Nature",
@@ -1725,7 +1730,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Computers",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Computers",
@@ -1738,7 +1743,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Math",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Math",
@@ -1751,7 +1756,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Mythology",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Mythology",
@@ -1764,7 +1769,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Sports",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Sports",
@@ -1777,7 +1782,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Geography",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Geography",
@@ -1790,7 +1795,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "History",
                   "nodeType": "host",
                   "props": Object {
                     "children": "History",
@@ -1803,7 +1808,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Politics",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Politics",
@@ -1816,7 +1821,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Art",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Art",
@@ -1829,7 +1834,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Celebrities",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Celebrities",
@@ -1842,7 +1847,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Animals",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Animals",
@@ -1855,7 +1860,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Vehicles",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Vehicles",
@@ -1868,7 +1873,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Comics",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Comics",
@@ -1881,7 +1886,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Anime and Manga",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Anime and Manga",
@@ -1894,7 +1899,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "Cartoons and Animation",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Cartoons and Animation",
@@ -2053,7 +2058,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "dropdown-title",
+            "className": "hidden",
             "name": "prize",
             "onChange": [Function],
             "placeholder": "What will you Wager?",
