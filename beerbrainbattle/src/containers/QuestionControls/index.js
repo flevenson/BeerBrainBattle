@@ -68,7 +68,6 @@ export class QuestionControls extends Component {
     const { players, category, difficulty, numPlayers, prize } = this.state
     const question = await API.fetchRandomQuestion(category, difficulty);
     this.props.addQuestion(question);
-    // this.keepPlayers();
     if(this.props.players !== 0 || this.props.players === '') {
       this.props.addPlayers(this.props.players);
     } else {
@@ -79,20 +78,14 @@ export class QuestionControls extends Component {
 }
 
   makePrize = () => {
-    if(!this.state.prize.length) {
+    if(!this.state.prize.length && !this.props.prize) {
       const randomBeer = BeerData.beerData[Math.floor(Math.random() * 100)]
       const randomPrize = `${randomBeer.year} ${randomBeer.beerName} from  ${randomBeer.brewery} worth $${randomBeer.value}`
       this.props.addPrize(randomPrize)
-    } else {
+    } else if (!this.props.prize){
       this.props.addPrize(this.state.prize)
-    }
-  }
-
-  keepPlayers = () => {
-    if(this.props.players !== 0 || this.props.players === '') {
-      this.setState({
-        numPlayers: this.props.players
-      })
+    } else {
+      this.props.addPrize(this.props.prize)
     }
   }
 
