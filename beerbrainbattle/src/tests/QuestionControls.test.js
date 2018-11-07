@@ -10,7 +10,7 @@ describe('QuestionControls', () => {
 
   beforeEach(() => {
     wrapper = shallow(<QuestionControls 
-      prize={ mockPrize }
+      prize={ '' }
       addPlayers={jest.fn()}
       addPrize={jest.fn()}
       addQuestion={jest.fn()}
@@ -47,6 +47,30 @@ describe('QuestionControls', () => {
 
       const mappedProps = mapStateToProps(mockState)
       expect(mappedProps.prize).toEqual(expected)
+    })
+
+    it('should call handleInputChange when numPlayers is changed', () => {
+      const spy = spyOn(wrapper.instance(), 'handleInputChange')
+      wrapper.instance().forceUpdate()
+      const mockEvent = { 
+        target: { value: 'something'},
+        name: 'numPlayers' }
+
+      wrapper.find('.num-players').simulate('change', mockEvent)
+
+      expect(spy).toHaveBeenCalled()
+    })
+
+    it('should call handleInputChange when numPlayers is changed', () => {
+      const spy = spyOn(wrapper.instance(), 'handleInputChange')
+      wrapper.instance().forceUpdate()
+      const mockEvent = { 
+        target: { value: 'something else'},
+        name: 'prize' }
+
+      wrapper.find('.prize').simulate('change', mockEvent)
+
+      expect(spy).toHaveBeenCalled()
     })
   })
 

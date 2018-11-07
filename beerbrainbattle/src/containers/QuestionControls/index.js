@@ -150,14 +150,14 @@ export class QuestionControls extends Component {
           </ul>
         </div>
         <input 
-          className={this.props.players ? 'hidden' : 'dropdown-title'} 
+          className={this.props.players ? 'hidden' : 'dropdown-title num-players'} 
           placeholder='Number Of Players' 
           value={ numPlayers } 
           onChange={this.handleInputChange} 
           name='numPlayers'>
         </input>
         <input 
-          className={this.props.prize ? 'hidden' : 'dropdown-title'} 
+          className={this.props.prize ? 'hidden' : 'dropdown-title prize'} 
           placeholder='What will you Wager?' 
           value={ prize } 
           onChange={this.handleInputChange}

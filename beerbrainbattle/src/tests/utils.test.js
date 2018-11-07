@@ -45,5 +45,20 @@ describe('API', () => {
 
       expect(window.fetch).toHaveBeenCalledWith(expected);
     })
+
+    it('should return a clean question if status is ok', async () => {
+      const result = await API.fetchRandomQuestion(mockCategory, mockDifficulty)
+      const expected = mockQuestion
+
+      expect(result.length).toEqual(expected.length)
+    })
+
+    // it('should throw an error if the status is not ok', () => {
+    //   const expected = Error('fetch failed.')
+
+    //   window.fetch = jest.fn(() => Promise.resolve({ ok: false, statusText: 'fetch failed.'}))
+
+    //   expect(API.fetchRandomQuestion()).rejects.toEqual(expected)
+    // })
   })
 })

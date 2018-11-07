@@ -7,7 +7,7 @@ ShallowWrapper {
     addPlayers={[MockFunction]}
     addPrize={[MockFunction]}
     addQuestion={[MockFunction]}
-    prize="1 Whole Beer"
+    prize=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -208,14 +208,14 @@ ShallowWrapper {
           </ul>
         </div>,
         <input
-          className="dropdown-title"
+          className="dropdown-title num-players"
           name="numPlayers"
           onChange={[Function]}
           placeholder="Number Of Players"
           value=""
         />,
         <input
-          className="hidden"
+          className="dropdown-title prize"
           name="prize"
           onChange={[Function]}
           placeholder="What will you Wager?"
@@ -1009,7 +1009,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "dropdown-title",
+          "className": "dropdown-title num-players",
           "name": "numPlayers",
           "onChange": [Function],
           "placeholder": "Number Of Players",
@@ -1024,7 +1024,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "hidden",
+          "className": "dropdown-title prize",
           "name": "prize",
           "onChange": [Function],
           "placeholder": "What will you Wager?",
@@ -1242,14 +1242,14 @@ ShallowWrapper {
             </ul>
           </div>,
           <input
-            className="dropdown-title"
+            className="dropdown-title num-players"
             name="numPlayers"
             onChange={[Function]}
             placeholder="Number Of Players"
             value=""
           />,
           <input
-            className="hidden"
+            className="dropdown-title prize"
             name="prize"
             onChange={[Function]}
             placeholder="What will you Wager?"
@@ -2043,7 +2043,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "dropdown-title",
+            "className": "dropdown-title num-players",
             "name": "numPlayers",
             "onChange": [Function],
             "placeholder": "Number Of Players",
@@ -2058,7 +2058,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "hidden",
+            "className": "dropdown-title prize",
             "name": "prize",
             "onChange": [Function],
             "placeholder": "What will you Wager?",
