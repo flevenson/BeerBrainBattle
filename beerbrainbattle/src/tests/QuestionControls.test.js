@@ -50,4 +50,37 @@ describe('QuestionControls', () => {
     })
   })
 
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch with the addPlayers action', () => {
+      const mockDispatch = jest.fn()
+      const expected = Actions.addPlayers()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.addPlayers()
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+
+    it('should call dispatch with the addQuestion action', () => {
+      const mockDispatch = jest.fn()
+      const expected = Actions.addQuestion()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.addQuestion()
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+
+    it('should call dispatch with the addPrize action', () => {
+      const mockDispatch = jest.fn()
+      const expected = Actions.addPrize()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.addPrize()
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+  })
+
+
 })
