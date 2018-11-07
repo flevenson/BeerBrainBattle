@@ -108,7 +108,7 @@ export class QuestionControls extends Component {
     <li 
       className={ 
         showCategories 
-        ? 'dropdown-option' 
+        ? 'dropdown-option category-option' 
         : 'hidden' }
       key={ categoryData } 
       onClick={ this.setCategory }>{ categoryData } 
@@ -120,13 +120,13 @@ export class QuestionControls extends Component {
         className='question-controls'
         onSubmit={this.handleSubmit}>
         <div>
-          <div className='dropdown-title' onClick={ this.toggleShowCategories}>{ category.length ? category : 'Category' }</div>
+          <div className='dropdown-title categories-title' onClick={ this.toggleShowCategories}>{ category.length ? category : 'Category' }</div>
           <ul className={ showCategories ? 'category-holder' : 'hidden' }>
             { categoryOptions }
           </ul>
         </div>
         <div>
-          <div className='dropdown-title' onClick={ this.toggleShowDifficulty}>{ difficulty.length ? difficulty : 'Difficulty'}</div>
+          <div className='dropdown-title difficulty-title' onClick={ this.toggleShowDifficulty}>{ difficulty.length ? difficulty : 'Difficulty'}</div>
           <ul className={ showDifficulty? 'difficulty-holder' : 'hidden' }>
             <li 
               className={ 

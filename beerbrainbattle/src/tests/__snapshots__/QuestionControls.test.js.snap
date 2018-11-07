@@ -25,7 +25,7 @@ ShallowWrapper {
       "children": Array [
         <div>
           <div
-            className="dropdown-title"
+            className="dropdown-title categories-title"
             onClick={[Function]}
           >
             Category
@@ -181,7 +181,7 @@ ShallowWrapper {
         </div>,
         <div>
           <div
-            className="dropdown-title"
+            className="dropdown-title difficulty-title"
             onClick={[Function]}
           >
             Difficulty
@@ -242,7 +242,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="dropdown-title"
+              className="dropdown-title categories-title"
               onClick={[Function]}
             >
               Category
@@ -405,7 +405,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Category",
-              "className": "dropdown-title",
+              "className": "dropdown-title categories-title",
               "onClick": [Function],
             },
             "ref": null,
@@ -892,7 +892,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="dropdown-title"
+              className="dropdown-title difficulty-title"
               onClick={[Function]}
             >
               Difficulty
@@ -929,7 +929,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Difficulty",
-              "className": "dropdown-title",
+              "className": "dropdown-title difficulty-title",
               "onClick": [Function],
             },
             "ref": null,
@@ -1065,7 +1065,7 @@ ShallowWrapper {
         "children": Array [
           <div>
             <div
-              className="dropdown-title"
+              className="dropdown-title categories-title"
               onClick={[Function]}
             >
               Category
@@ -1221,7 +1221,7 @@ ShallowWrapper {
           </div>,
           <div>
             <div
-              className="dropdown-title"
+              className="dropdown-title difficulty-title"
               onClick={[Function]}
             >
               Difficulty
@@ -1282,7 +1282,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="dropdown-title"
+                className="dropdown-title categories-title"
                 onClick={[Function]}
               >
                 Category
@@ -1445,7 +1445,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Category",
-                "className": "dropdown-title",
+                "className": "dropdown-title categories-title",
                 "onClick": [Function],
               },
               "ref": null,
@@ -1932,7 +1932,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="dropdown-title"
+                className="dropdown-title difficulty-title"
                 onClick={[Function]}
               >
                 Difficulty
@@ -1969,7 +1969,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Difficulty",
-                "className": "dropdown-title",
+                "className": "dropdown-title difficulty-title",
                 "onClick": [Function],
               },
               "ref": null,
@@ -2142,7 +2142,7 @@ ShallowWrapper {
       "children": Array [
         <div>
           <div
-            className="dropdown-title"
+            className="dropdown-title categories-title"
             onClick={[Function]}
           >
             Category
@@ -2298,7 +2298,7 @@ ShallowWrapper {
         </div>,
         <div>
           <div
-            className="dropdown-title"
+            className="dropdown-title difficulty-title"
             onClick={[Function]}
           >
             Difficulty
@@ -2359,7 +2359,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="dropdown-title"
+              className="dropdown-title categories-title"
               onClick={[Function]}
             >
               Category
@@ -2522,7 +2522,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Category",
-              "className": "dropdown-title",
+              "className": "dropdown-title categories-title",
               "onClick": [Function],
             },
             "ref": null,
@@ -3009,7 +3009,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="dropdown-title"
+              className="dropdown-title difficulty-title"
               onClick={[Function]}
             >
               Difficulty
@@ -3046,7 +3046,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Difficulty",
-              "className": "dropdown-title",
+              "className": "dropdown-title difficulty-title",
               "onClick": [Function],
             },
             "ref": null,
@@ -3182,7 +3182,7 @@ ShallowWrapper {
         "children": Array [
           <div>
             <div
-              className="dropdown-title"
+              className="dropdown-title categories-title"
               onClick={[Function]}
             >
               Category
@@ -3338,7 +3338,7 @@ ShallowWrapper {
           </div>,
           <div>
             <div
-              className="dropdown-title"
+              className="dropdown-title difficulty-title"
               onClick={[Function]}
             >
               Difficulty
@@ -3399,7 +3399,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="dropdown-title"
+                className="dropdown-title categories-title"
                 onClick={[Function]}
               >
                 Category
@@ -3562,7 +3562,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Category",
-                "className": "dropdown-title",
+                "className": "dropdown-title categories-title",
                 "onClick": [Function],
               },
               "ref": null,
@@ -4049,7 +4049,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="dropdown-title"
+                className="dropdown-title difficulty-title"
                 onClick={[Function]}
               >
                 Difficulty
@@ -4086,7 +4086,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Difficulty",
-                "className": "dropdown-title",
+                "className": "dropdown-title difficulty-title",
                 "onClick": [Function],
               },
               "ref": null,
@@ -4260,7 +4260,7 @@ ShallowWrapper {
       "children": Array [
         <div>
           <div
-            className="dropdown-title"
+            className="dropdown-title categories-title"
             onClick={[Function]}
           >
             Category
@@ -4416,7 +4416,7 @@ ShallowWrapper {
         </div>,
         <div>
           <div
-            className="dropdown-title"
+            className="dropdown-title difficulty-title"
             onClick={[Function]}
           >
             Difficulty
@@ -4477,7 +4477,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="dropdown-title"
+              className="dropdown-title categories-title"
               onClick={[Function]}
             >
               Category
@@ -4640,7 +4640,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Category",
-              "className": "dropdown-title",
+              "className": "dropdown-title categories-title",
               "onClick": [Function],
             },
             "ref": null,
@@ -5127,7 +5127,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="dropdown-title"
+              className="dropdown-title difficulty-title"
               onClick={[Function]}
             >
               Difficulty
@@ -5164,7 +5164,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Difficulty",
-              "className": "dropdown-title",
+              "className": "dropdown-title difficulty-title",
               "onClick": [Function],
             },
             "ref": null,
@@ -5300,7 +5300,7 @@ ShallowWrapper {
         "children": Array [
           <div>
             <div
-              className="dropdown-title"
+              className="dropdown-title categories-title"
               onClick={[Function]}
             >
               Category
@@ -5456,7 +5456,7 @@ ShallowWrapper {
           </div>,
           <div>
             <div
-              className="dropdown-title"
+              className="dropdown-title difficulty-title"
               onClick={[Function]}
             >
               Difficulty
@@ -5517,7 +5517,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="dropdown-title"
+                className="dropdown-title categories-title"
                 onClick={[Function]}
               >
                 Category
@@ -5680,7 +5680,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Category",
-                "className": "dropdown-title",
+                "className": "dropdown-title categories-title",
                 "onClick": [Function],
               },
               "ref": null,
@@ -6167,7 +6167,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="dropdown-title"
+                className="dropdown-title difficulty-title"
                 onClick={[Function]}
               >
                 Difficulty
@@ -6204,7 +6204,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Difficulty",
-                "className": "dropdown-title",
+                "className": "dropdown-title difficulty-title",
                 "onClick": [Function],
               },
               "ref": null,
@@ -6378,7 +6378,7 @@ ShallowWrapper {
       "children": Array [
         <div>
           <div
-            className="dropdown-title"
+            className="dropdown-title categories-title"
             onClick={[Function]}
           >
             Category
@@ -6534,7 +6534,7 @@ ShallowWrapper {
         </div>,
         <div>
           <div
-            className="dropdown-title"
+            className="dropdown-title difficulty-title"
             onClick={[Function]}
           >
             Difficulty
@@ -6595,7 +6595,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="dropdown-title"
+              className="dropdown-title categories-title"
               onClick={[Function]}
             >
               Category
@@ -6758,7 +6758,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Category",
-              "className": "dropdown-title",
+              "className": "dropdown-title categories-title",
               "onClick": [Function],
             },
             "ref": null,
@@ -7245,7 +7245,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="dropdown-title"
+              className="dropdown-title difficulty-title"
               onClick={[Function]}
             >
               Difficulty
@@ -7282,7 +7282,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Difficulty",
-              "className": "dropdown-title",
+              "className": "dropdown-title difficulty-title",
               "onClick": [Function],
             },
             "ref": null,
@@ -7418,7 +7418,7 @@ ShallowWrapper {
         "children": Array [
           <div>
             <div
-              className="dropdown-title"
+              className="dropdown-title categories-title"
               onClick={[Function]}
             >
               Category
@@ -7574,7 +7574,7 @@ ShallowWrapper {
           </div>,
           <div>
             <div
-              className="dropdown-title"
+              className="dropdown-title difficulty-title"
               onClick={[Function]}
             >
               Difficulty
@@ -7635,7 +7635,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="dropdown-title"
+                className="dropdown-title categories-title"
                 onClick={[Function]}
               >
                 Category
@@ -7798,7 +7798,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Category",
-                "className": "dropdown-title",
+                "className": "dropdown-title categories-title",
                 "onClick": [Function],
               },
               "ref": null,
@@ -8285,7 +8285,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="dropdown-title"
+                className="dropdown-title difficulty-title"
                 onClick={[Function]}
               >
                 Difficulty
@@ -8322,7 +8322,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Difficulty",
-                "className": "dropdown-title",
+                "className": "dropdown-title difficulty-title",
                 "onClick": [Function],
               },
               "ref": null,

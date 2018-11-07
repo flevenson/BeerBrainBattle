@@ -90,6 +90,49 @@ describe('QuestionControls', () => {
 
       expect(spy).toHaveBeenCalled()
     })
+
+    it('should call toggleShowDifficulty on a click', () => {
+      const spy = spyOn(wrapper.instance(), 'toggleShowDifficulty')
+      wrapper.instance().forceUpdate()
+
+      wrapper.find('.difficulty-title').simulate('click')
+
+      expect(spy).toHaveBeenCalled()
+    })
+
+    it('should call toggleShowCategories on a click', () => {
+      const spy = spyOn(wrapper.instance(), 'toggleShowCategories')
+      wrapper.instance().forceUpdate()
+
+      wrapper.find('.categories-title').simulate('click')
+
+      expect(spy).toHaveBeenCalled()
+    })
+
+    it('should call setCategory on a click', () => {
+      const spy = spyOn(wrapper.instance(), 'setCategory')
+      wrapper.instance().forceUpdate()
+
+      wrapper.instance().toggleShowCategories()
+
+      wrapper.instance().forceUpdate()
+
+
+      wrapper.first('.category-option').simulate('click')
+
+      expect(spy).toHaveBeenCalled()
+    })
+
+
+    it('should call handleSubmit on submit', async () => {
+      const spy = spyOn(wrapper.instance(), 'handleSubmit')
+      wrapper.instance().forceUpdate()
+
+
+      wrapper.find('form').simulate('submit')
+
+      expect(spy).toHaveBeenCalled()
+    })
   })
 
 
