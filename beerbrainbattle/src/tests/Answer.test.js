@@ -16,8 +16,9 @@ describe('Answer', () => {
   describe('Answer Component', () => {
     it('should match the snapshot', () => {
       expect(wrapper).toMatchSnapshot()
-    })
   })
+  
+})
 
   describe('mapStateToProps', () => {
     it('should parse the players from state', () => {

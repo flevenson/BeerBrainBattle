@@ -7,26 +7,28 @@ import { withRouter } from 'react-router';
 
 export const GameOver = (props) => {
 
-  if(!Object.keys(props.question).length){
+  const { question, addPlayers, addPrize, prize } = props
+
+  if(!Object.keys(question).length){
     props.history.push('/')
   } 
 
   let correctAnswer
 
-  if(Object.keys(props.question).length){
-    correctAnswer = props.question.answers.find(answer => answer.correct === true)
+  if(Object.keys(question).length){
+    correctAnswer = question.answers.find(answer => answer.correct === true)
   return(
     <div className='answer-container'>
       <div className='answer'>
         <h1 className='game-over'>GAME OVER</h1>
         <p className='correct-answer-title'>The Correct Answer Was:</p>
         <p className='correct-answer-answer'>{correctAnswer.answer}</p>
-        <p className='award'>You Won {props.prize}</p>
+        <p className='award'>You Won {prize}</p>
       </div>
       <button 
         onClick={() => {
-          props.addPlayers(0)
-          props.addPrize('')
+          addPlayers(0)
+          addPrize('')
           props.history.push('/')
         }} 
         className='next-round'>Play Again!</button>
