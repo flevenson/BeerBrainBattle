@@ -22,4 +22,32 @@ describe('QuestionControls', () => {
       expect(wrapper).toMatchSnapshot()
     })
   })
+
+  describe('mapStateToProps', () => {
+    it('should parse the players from state', () => {
+      const mockState = {
+        players: mockPlayers,
+        prize: mockPrize,
+        question: mockQuestion
+      }
+      const expected = 4
+
+      const mappedProps = mapStateToProps(mockState)
+      expect(mappedProps.players).toEqual(expected)
+    })
+
+    it('should parse the prize from state', () => {
+      const mockState = {
+        players: mockPlayers,
+        prize: mockPrize,
+        question: mockQuestion
+      }
+
+      const expected = mockPrize
+
+      const mappedProps = mapStateToProps(mockState)
+      expect(mappedProps.prize).toEqual(expected)
+    })
+  })
+
 })

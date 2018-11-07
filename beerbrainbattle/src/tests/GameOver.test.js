@@ -22,7 +22,7 @@ describe('GameOver', () => {
     })
   })
 
-    describe('mapStateToProps', () => {
+  describe('mapStateToProps', () => {
     it('should parse the players from state', () => {
       const mockState = {
         players: mockPlayers,
