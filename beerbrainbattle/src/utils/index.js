@@ -28,8 +28,8 @@ export const cleanQuestion = (question) => {
       question: question.question.replace(/&quot;/g,'"').replace(/&#039;/g,"'").replace(/&mp;/g,"&"),
       isCorrectlyAnswered: false,
       answers: cleanAnswers(question.correct_answer, question.incorrect_answers)
-    }))
-  
+    })
+  ) 
 }
 
 export const cleanAnswers = (correctAnswer, incorrectAnswers) => {
@@ -44,17 +44,14 @@ export const cleanAnswers = (correctAnswer, incorrectAnswers) => {
     numVotes: 0
   }))
 
-
   const answers = [cleanCorrectAnswer, ...cleanIncorrectAnswers]
-
-
 
   return randomizeAnswers(answers)
 }
 
 export const randomizeAnswers = (answers) => {
-    const spliceIndex = Math.floor(Math.random() * Math.floor(4));
-    const correctAnswer = answers.shift();
-    answers.splice(spliceIndex, 0, correctAnswer)
-    return answers
+  const spliceIndex = Math.floor(Math.random() * Math.floor(4));
+  const correctAnswer = answers.shift();
+  answers.splice(spliceIndex, 0, correctAnswer)
+  return answers
 }

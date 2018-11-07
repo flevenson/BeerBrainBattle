@@ -28,3 +28,20 @@ export const mockPlayers = 4
 export const mockAnswer = {answer:'2',  correct: false, numVotes: 1}
 
 export const mockPrize = '1 Whole Beer'
+
+export const mockCategory = 'Math'
+
+export const mockDifficulty = 'Easy'
+
+export const mockAPIQuestion = {
+  results: [
+    {
+      category: "Math",
+      correct_answer: "4",
+      difficulty: "Easy",
+      incorrect_answers: ["5", "4", "0"],
+      question: "What is Two plus Two",
+      type: "multiple"
+    }
+  ]
+}

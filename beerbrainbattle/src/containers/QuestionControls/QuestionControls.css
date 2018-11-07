@@ -5,12 +5,18 @@
   flex-direction: column;
   width: 300px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .category-holder {
-  height: 48px;
+  height: 140px;
   overflow: scroll;
+  position: absolute;
+}
+
+.difficulty-holder {
+  position: absolute;
+  height: 140px;
 }
 
 .dropdown-title {
@@ -24,6 +30,9 @@
   border: 2px solid #2E2453;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdown-title:hover, .dropdown-option:hover {
@@ -45,9 +54,15 @@
 
 .hidden {
   height: 0px;
+  width: 0px;
   overflow: hidden;
 }
 
+.battle-button {
+  width: 200px;
+  height: 36px;
+}
+
 input.hidden {
-  display: none;
+    display: none;
 }

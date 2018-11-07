@@ -1,6 +1,6 @@
 .answer {
-  height: 200px;
-  width: 300px;
+  height: 150px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@
 .next-round {
   padding: 3px;
   text-align:center;
-  width: 190px;
+  width: 250px;
   height: 30px;
   font-size: 1.1rem;
   background-color: #C7EAF0;
@@ -35,6 +35,6 @@
   height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }

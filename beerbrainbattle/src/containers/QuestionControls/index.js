@@ -109,22 +109,25 @@ export class QuestionControls extends Component {
       className={ 
         showCategories 
         ? 'dropdown-option' 
-        : 'hidden' } 
+        : 'hidden' }
+      key={ categoryData } 
       onClick={ this.setCategory }>{ categoryData } 
     </li>
   )
 
     return(
-      <form className='question-controls'>
+      <form 
+        className='question-controls'
+        onSubmit={this.handleSubmit}>
         <div>
           <div className='dropdown-title' onClick={ this.toggleShowCategories}>{ category.length ? category : 'Category' }</div>
-          <ul className='category-holder'>
+          <ul className={ showCategories ? 'category-holder' : 'hidden' }>
             { categoryOptions }
           </ul>
         </div>
         <div>
           <div className='dropdown-title' onClick={ this.toggleShowDifficulty}>{ difficulty.length ? difficulty : 'Difficulty'}</div>
-          <ul>
+          <ul className={ showDifficulty? 'difficulty-holder' : 'hidden' }>
             <li 
               className={ 
                 showDifficulty 
@@ -149,20 +152,20 @@ export class QuestionControls extends Component {
           </ul>
         </div>
         <input 
-          className={this.props.players ? 'hidden' : 'dropdown-title'} 
+          className={this.props.players ? 'hidden' : 'dropdown-title num-players'} 
           placeholder='Number Of Players' 
           value={ numPlayers } 
           onChange={this.handleInputChange} 
           name='numPlayers'>
         </input>
         <input 
-          className={this.props.prize ? 'hidden' : 'dropdown-title'} 
+          className={this.props.prize ? 'hidden' : 'dropdown-title prize'} 
           placeholder='What will you Wager?' 
           value={ prize } 
           onChange={this.handleInputChange}
           name='prize'>
         </input>
-        <button className='dropdown-title' onClick={this.handleSubmit}> Battle </button>
+        <button className='dropdown-title battle-button' onClick={this.handleSubmit}> Battle </button>
       </form>
     )
   }

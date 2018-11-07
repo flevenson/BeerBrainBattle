@@ -4,6 +4,8 @@ exports[`Question Question Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Question
+    addVote={[MockFunction]}
+    filterPlayers={[MockFunction]}
     question={
       Object {
         "answers": Array [
@@ -166,7 +168,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "[object Object]",
             "nodeType": "host",
             "props": Object {
               "children": Array [
@@ -187,7 +189,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "[object Object]",
             "nodeType": "host",
             "props": Object {
               "children": Array [
@@ -208,7 +210,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "[object Object]",
             "nodeType": "host",
             "props": Object {
               "children": Array [
@@ -229,7 +231,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "[object Object]",
             "nodeType": "host",
             "props": Object {
               "children": Array [
@@ -378,7 +380,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "[object Object]",
               "nodeType": "host",
               "props": Object {
                 "children": Array [
@@ -399,7 +401,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "[object Object]",
               "nodeType": "host",
               "props": Object {
                 "children": Array [
@@ -420,7 +422,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "[object Object]",
               "nodeType": "host",
               "props": Object {
                 "children": Array [
@@ -441,7 +443,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "[object Object]",
               "nodeType": "host",
               "props": Object {
                 "children": Array [
