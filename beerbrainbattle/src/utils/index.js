@@ -16,6 +16,7 @@ export const fetchRandomQuestion = async (category, difficulty) => {
     throw new Error(response.statusText)
   } else {
     const question = await response.json();
+    console.log(question.results)
     const cleanedQuestion = cleanQuestion(question.results)
     return cleanedQuestion
   }
