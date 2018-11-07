@@ -28,5 +28,14 @@ describe('API', () => {
 
       expect(window.fetch).toHaveBeenCalledWith(expected);
     })
+
+    it('should call fetch with the correct url when a difficulty is passed', async () => {
+      const expected = `https://opentdb.com/api.php?amount=1&difficulty=easy&type=multiple`
+
+      await API.fetchRandomQuestion('', mockDifficulty)
+
+      expect(window.fetch).toHaveBeenCalledWith(expected);
+    })
+
   })
 })
