@@ -22,18 +22,18 @@ npm start
 -openTDB API (http://opentdb.com)
 
 ## See it live
-![Home Screen](./src/assets/homescreenshot.png "HomeScreen Screenshot")
+![Home Screen](./beerbrainbattle/src/assets/homescreenshot.png "HomeScreen Screenshot")
 
-![Question Screen](./src/assets/question.png "HomeScreen Screenshot")
+![Question Screen](./beerbrainbattle/src/assets/question.png "HomeScreen Screenshot")
 
-![Answer Screen](./src/assets/answer.png "HomeScreen Screenshot")
+![Answer Screen](./beerbrainbattle/src/assets/answer.png "HomeScreen Screenshot")
 
-![Game Over Screen](./src/assets/gameOver.png "HomeScreen Screenshot")
+![Game Over Screen](./beerbrainbattle/src/assets/gameOver.png "HomeScreen Screenshot")
 
 ## Wireframe
 BeerBrainBattle is a web-based single page game that allows you to play trivia with friends, recieve questions from the openTDB trivia API and challenge your friends for drinks.
 
-![WireFrame](./src/assets/wireframe.jpg "App Wireframe")
+![WireFrame](./beerbrainbattle/src/assets/wireframe.jpg "App Wireframe")
 
 ## App Architecture
 
