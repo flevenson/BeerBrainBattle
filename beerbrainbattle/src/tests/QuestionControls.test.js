@@ -21,7 +21,6 @@ describe('QuestionControls', () => {
     it('should match the snapshot', () => {
       expect(wrapper).toMatchSnapshot()
     })
-  })
 
     it('should match the snapshot with players', () => {
       wrapper = shallow(<QuestionControls 
@@ -33,7 +32,7 @@ describe('QuestionControls', () => {
       />);
 
       expect(wrapper).toMatchSnapshot()
-  })
+    })
 
     it('should match the snapshot with a prize', () => {
       wrapper = shallow(<QuestionControls 
@@ -44,7 +43,7 @@ describe('QuestionControls', () => {
       />);
 
       expect(wrapper).toMatchSnapshot()
-  })
+    })
 
     it('should match the snapshot with a prize', () => {
       wrapper = shallow(<QuestionControls 
@@ -56,6 +55,19 @@ describe('QuestionControls', () => {
       />);
 
       expect(wrapper).toMatchSnapshot()
+    })
+
+    it('should toggle showCategories in state when toggleShowCategories is called', () => {
+      expect(wrapper.state('showCategories')).toEqual(false)
+
+      wrapper.instance().toggleShowCategories()
+
+      expect(wrapper.state('showCategories')).toEqual(true)
+
+      wrapper.instance().toggleShowCategories()
+
+      expect(wrapper.state('showCategories')).toEqual(false)
+    })
   })
 
 
