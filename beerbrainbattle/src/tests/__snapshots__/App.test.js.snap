@@ -56,26 +56,31 @@ ShallowWrapper {
         <main
           className="app-main"
         >
-          <Route
-            exact={true}
-            path="/"
-            render={[Function]}
-          />
-          <Route
-            exact={true}
-            path="/question"
-            render={[Function]}
-          />
-          <Route
-            exact={true}
-            path="/answer"
-            render={[Function]}
-          />
-          <Route
-            exact={true}
-            path="/gameOver"
-            render={[Function]}
-          />
+          <Switch>
+            <Route
+              exact={true}
+              path="/"
+              render={[Function]}
+            />
+            <Route
+              exact={true}
+              path="/question"
+              render={[Function]}
+            />
+            <Route
+              exact={true}
+              path="/answer"
+              render={[Function]}
+            />
+            <Route
+              exact={true}
+              path="/gameOver"
+              render={[Function]}
+            />
+            <Route
+              component={[Function]}
+            />
+          </Switch>
         </main>,
         <footer>
           <h1
@@ -250,85 +255,133 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
+          "children": <Switch>
             <Route
               exact={true}
               path="/"
               render={[Function]}
-            />,
+            />
             <Route
               exact={true}
               path="/question"
               render={[Function]}
-            />,
+            />
             <Route
               exact={true}
               path="/answer"
               render={[Function]}
-            />,
+            />
             <Route
               exact={true}
               path="/gameOver"
               render={[Function]}
-            />,
-          ],
+            />
+            <Route
+              component={[Function]}
+            />
+          </Switch>,
           "className": "app-main",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "/",
-              "render": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Route
+                exact={true}
+                path="/"
+                render={[Function]}
+              />,
+              <Route
+                exact={true}
+                path="/question"
+                render={[Function]}
+              />,
+              <Route
+                exact={true}
+                path="/answer"
+                render={[Function]}
+              />,
+              <Route
+                exact={true}
+                path="/gameOver"
+                render={[Function]}
+              />,
+              <Route
+                component={[Function]}
+              />,
+            ],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "/question",
-              "render": [Function],
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "/answer",
-              "render": [Function],
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/question",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "/gameOver",
-              "render": [Function],
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/answer",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/gameOver",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
         "type": "main",
       },
       Object {
@@ -410,26 +463,31 @@ ShallowWrapper {
           <main
             className="app-main"
           >
-            <Route
-              exact={true}
-              path="/"
-              render={[Function]}
-            />
-            <Route
-              exact={true}
-              path="/question"
-              render={[Function]}
-            />
-            <Route
-              exact={true}
-              path="/answer"
-              render={[Function]}
-            />
-            <Route
-              exact={true}
-              path="/gameOver"
-              render={[Function]}
-            />
+            <Switch>
+              <Route
+                exact={true}
+                path="/"
+                render={[Function]}
+              />
+              <Route
+                exact={true}
+                path="/question"
+                render={[Function]}
+              />
+              <Route
+                exact={true}
+                path="/answer"
+                render={[Function]}
+              />
+              <Route
+                exact={true}
+                path="/gameOver"
+                render={[Function]}
+              />
+              <Route
+                component={[Function]}
+              />
+            </Switch>
           </main>,
           <footer>
             <h1
@@ -604,85 +662,133 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
+            "children": <Switch>
               <Route
                 exact={true}
                 path="/"
                 render={[Function]}
-              />,
+              />
               <Route
                 exact={true}
                 path="/question"
                 render={[Function]}
-              />,
+              />
               <Route
                 exact={true}
                 path="/answer"
                 render={[Function]}
-              />,
+              />
               <Route
                 exact={true}
                 path="/gameOver"
                 render={[Function]}
-              />,
-            ],
+              />
+              <Route
+                component={[Function]}
+              />
+            </Switch>,
             "className": "app-main",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Route
+                  exact={true}
+                  path="/"
+                  render={[Function]}
+                />,
+                <Route
+                  exact={true}
+                  path="/question"
+                  render={[Function]}
+                />,
+                <Route
+                  exact={true}
+                  path="/answer"
+                  render={[Function]}
+                />,
+                <Route
+                  exact={true}
+                  path="/gameOver"
+                  render={[Function]}
+                />,
+                <Route
+                  component={[Function]}
+                />,
+              ],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/question",
-                "render": [Function],
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "exact": true,
+                  "path": "/",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/answer",
-                "render": [Function],
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "exact": true,
+                  "path": "/question",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/gameOver",
-                "render": [Function],
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "exact": true,
+                  "path": "/answer",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "exact": true,
+                  "path": "/gameOver",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
           "type": "main",
         },
         Object {

@@ -131,21 +131,21 @@ export class QuestionControls extends Component {
             <li 
               className={ 
                 showDifficulty 
-                ? 'dropdown-option' 
+                ? 'dropdown-option easy' 
                 : 'hidden'} 
               onClick={this.setDifficulty}>Easy
             </li>
             <li 
               className={ 
                 showDifficulty 
-                ? 'dropdown-option' 
+                ? 'dropdown-option medium' 
                 : 'hidden'} 
               onClick={this.setDifficulty}>Medium
             </li>
             <li 
               className={ 
                 showDifficulty 
-                ? 'dropdown-option' 
+                ? 'dropdown-option hard' 
                 : 'hidden'} 
               onClick={this.setDifficulty}>Hard
             </li>

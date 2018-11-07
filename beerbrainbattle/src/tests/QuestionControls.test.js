@@ -80,6 +80,16 @@ describe('QuestionControls', () => {
 
       expect(wrapper.state('showDifficulty')).toEqual(false)
     })
+
+    it('should call setDifficulty on a click', () => {
+      const spy = spyOn(wrapper.instance(), 'setDifficulty')
+
+      wrapper.instance().toggleShowDifficulty()
+
+      wrapper.find('.easy').simulate('click')
+
+      expect(spy).toHaveBeenCalled()
+    })
   })
 
 
