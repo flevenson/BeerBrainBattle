@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mockQuestion, mockPlayers, mockPrize } from './testMocks.js'
-import { Question, mapStateToProps } from '../containers/Question';
+import { Question, mapStateToProps, mapDispatchToProps } from '../containers/Question';
 import * as Actions from '../actions'
 
 
@@ -46,6 +46,28 @@ describe('Question', () => {
 
       const mappedProps = mapStateToProps(mockState)
       expect(mappedProps.question).toEqual(expected)
+    })
+  })
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch with the addVote action', () => {
+      const mockDispatch = jest.fn()
+      const expected = Actions.addVote()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.addVote()
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+
+    it('should call dispatch with the filterPlayers action', () => {
+      const mockDispatch = jest.fn()
+      const expected = Actions.filterPlayers()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.filterPlayers()
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
     })
   })
 
