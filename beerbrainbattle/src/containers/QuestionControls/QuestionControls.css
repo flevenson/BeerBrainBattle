@@ -52,6 +52,10 @@
   cursor: pointer;
 }
 
+.num-players, .prize {
+  cursor:text;
+}
+
 .hidden {
   height: 0px;
   width: 0px;
