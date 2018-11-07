@@ -61,4 +61,26 @@ describe('GameOver', () => {
       expect(mappedProps.question).toEqual(expected)
     })
   })
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch with the addPlayers action', () => {
+      const mockDispatch = jest.fn()
+      const expected = Actions.addPlayers()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.addPlayers()
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+
+    it('should call dispatch with the addPrize action', () => {
+      const mockDispatch = jest.fn()
+      const expected = Actions.addPrize()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.addPrize()
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+  })
 })
