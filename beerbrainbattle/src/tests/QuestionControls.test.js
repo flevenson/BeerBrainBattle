@@ -68,6 +68,18 @@ describe('QuestionControls', () => {
 
       expect(wrapper.state('showCategories')).toEqual(false)
     })
+
+    it('should toggle showDifficulty in state when toggleShowDifficulty is called', () => {
+      expect(wrapper.state('showDifficulty')).toEqual(false)
+
+      wrapper.instance().toggleShowDifficulty()
+
+      expect(wrapper.state('showDifficulty')).toEqual(true)
+
+      wrapper.instance().toggleShowDifficulty()
+
+      expect(wrapper.state('showDifficulty')).toEqual(false)
+    })
   })
 
 
