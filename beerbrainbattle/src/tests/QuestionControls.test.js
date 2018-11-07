@@ -72,6 +72,15 @@ describe('QuestionControls', () => {
 
       expect(spy).toHaveBeenCalled()
     })
+
+    it('calls handleSubmit onSubmit of the form', () => {
+      const spy = spyOn(wrapper.instance(), 'handleSubmit')
+      wrapper.instance().forceUpdate()
+
+      wrapper.find('form').simulate('submit')
+
+      expect(spy).toHaveBeenCalled()
+    })
   })
 
   describe('mapDispatchToProps', () => {

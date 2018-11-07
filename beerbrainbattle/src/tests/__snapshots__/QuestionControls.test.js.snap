@@ -229,6 +229,7 @@ ShallowWrapper {
         </button>,
       ],
       "className": "question-controls",
+      "onSubmit": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -1263,6 +1264,7 @@ ShallowWrapper {
           </button>,
         ],
         "className": "question-controls",
+        "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [

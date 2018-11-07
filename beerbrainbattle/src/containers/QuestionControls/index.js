@@ -116,7 +116,9 @@ export class QuestionControls extends Component {
   )
 
     return(
-      <form className='question-controls'>
+      <form 
+        className='question-controls'
+        onSubmit={this.handleSubmit}>
         <div>
           <div className='dropdown-title' onClick={ this.toggleShowCategories}>{ category.length ? category : 'Category' }</div>
           <ul className='category-holder'>
