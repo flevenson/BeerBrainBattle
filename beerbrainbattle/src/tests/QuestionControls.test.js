@@ -109,19 +109,16 @@ describe('QuestionControls', () => {
       expect(spy).toHaveBeenCalled()
     })
 
-    it('should call setCategory on a click', () => {
-      const spy = spyOn(wrapper.instance(), 'setCategory')
-      wrapper.instance().forceUpdate()
+    // it('should call setCategory on a click', () => {
+    //   const spy = spyOn(wrapper.instance(), 'setCategory')
+    //   wrapper.instance().forceUpdate()
 
-      wrapper.instance().toggleShowCategories()
+    //   wrapper.instance().toggleShowCategories()
 
-      wrapper.instance().forceUpdate()
+    //   wrapper.first('.category-option').simulate('click')
 
-
-      wrapper.first('.category-option').simulate('click')
-
-      expect(spy).toHaveBeenCalled()
-    })
+    //   expect(spy).toHaveBeenCalled()
+    // })
 
 
     it('should call handleSubmit on submit', async () => {
@@ -133,6 +130,7 @@ describe('QuestionControls', () => {
 
       expect(spy).toHaveBeenCalled()
     })
+
   })
 
 
