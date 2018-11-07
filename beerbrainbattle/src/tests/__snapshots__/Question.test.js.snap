@@ -66,32 +66,44 @@ ShallowWrapper {
             onClick={[Function]}
           >
             5
-               
-            0
+            <span
+              className="hidden"
+            >
+              0
+            </span>
           </button>
           <button
             className="answer-button"
             onClick={[Function]}
           >
             2
-               
-            0
+            <span
+              className="hidden"
+            >
+              0
+            </span>
           </button>
           <button
             className="answer-button"
             onClick={[Function]}
           >
             4
-               
-            0
+            <span
+              className="hidden"
+            >
+              0
+            </span>
           </button>
           <button
             className="answer-button"
             onClick={[Function]}
           >
             0
-               
-            0
+            <span
+              className="hidden"
+            >
+              0
+            </span>
           </button>
         </div>,
       ],
@@ -134,32 +146,44 @@ ShallowWrapper {
               onClick={[Function]}
             >
               5
-                 
-              0
+              <span
+                className="hidden"
+              >
+                0
+              </span>
             </button>,
             <button
               className="answer-button"
               onClick={[Function]}
             >
               2
-                 
-              0
+              <span
+                className="hidden"
+              >
+                0
+              </span>
             </button>,
             <button
               className="answer-button"
               onClick={[Function]}
             >
               4
-                 
-              0
+              <span
+                className="hidden"
+              >
+                0
+              </span>
             </button>,
             <button
               className="answer-button"
               onClick={[Function]}
             >
               0
-                 
-              0
+              <span
+                className="hidden"
+              >
+                0
+              </span>
             </button>,
           ],
           "className": "answers",
@@ -173,8 +197,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "5",
-                "   ",
-                0,
+                <span
+                  className="hidden"
+                >
+                  0
+                </span>,
               ],
               "className": "answer-button",
               "onClick": [Function],
@@ -182,8 +209,18 @@ ShallowWrapper {
             "ref": null,
             "rendered": Array [
               "5",
-              "   ",
-              0,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "hidden",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "span",
+              },
             ],
             "type": "button",
           },
@@ -194,8 +231,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "2",
-                "   ",
-                0,
+                <span
+                  className="hidden"
+                >
+                  0
+                </span>,
               ],
               "className": "answer-button",
               "onClick": [Function],
@@ -203,8 +243,18 @@ ShallowWrapper {
             "ref": null,
             "rendered": Array [
               "2",
-              "   ",
-              0,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "hidden",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "span",
+              },
             ],
             "type": "button",
           },
@@ -215,8 +265,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "4",
-                "   ",
-                0,
+                <span
+                  className="hidden"
+                >
+                  0
+                </span>,
               ],
               "className": "answer-button",
               "onClick": [Function],
@@ -224,8 +277,18 @@ ShallowWrapper {
             "ref": null,
             "rendered": Array [
               "4",
-              "   ",
-              0,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "hidden",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "span",
+              },
             ],
             "type": "button",
           },
@@ -236,8 +299,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "0",
-                "   ",
-                0,
+                <span
+                  className="hidden"
+                >
+                  0
+                </span>,
               ],
               "className": "answer-button",
               "onClick": [Function],
@@ -245,8 +311,18 @@ ShallowWrapper {
             "ref": null,
             "rendered": Array [
               "0",
-              "   ",
-              0,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "hidden",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "span",
+              },
             ],
             "type": "button",
           },
@@ -278,32 +354,44 @@ ShallowWrapper {
               onClick={[Function]}
             >
               5
-                 
-              0
+              <span
+                className="hidden"
+              >
+                0
+              </span>
             </button>
             <button
               className="answer-button"
               onClick={[Function]}
             >
               2
-                 
-              0
+              <span
+                className="hidden"
+              >
+                0
+              </span>
             </button>
             <button
               className="answer-button"
               onClick={[Function]}
             >
               4
-                 
-              0
+              <span
+                className="hidden"
+              >
+                0
+              </span>
             </button>
             <button
               className="answer-button"
               onClick={[Function]}
             >
               0
-                 
-              0
+              <span
+                className="hidden"
+              >
+                0
+              </span>
             </button>
           </div>,
         ],
@@ -346,32 +434,44 @@ ShallowWrapper {
                 onClick={[Function]}
               >
                 5
-                   
-                0
+                <span
+                  className="hidden"
+                >
+                  0
+                </span>
               </button>,
               <button
                 className="answer-button"
                 onClick={[Function]}
               >
                 2
-                   
-                0
+                <span
+                  className="hidden"
+                >
+                  0
+                </span>
               </button>,
               <button
                 className="answer-button"
                 onClick={[Function]}
               >
                 4
-                   
-                0
+                <span
+                  className="hidden"
+                >
+                  0
+                </span>
               </button>,
               <button
                 className="answer-button"
                 onClick={[Function]}
               >
                 0
-                   
-                0
+                <span
+                  className="hidden"
+                >
+                  0
+                </span>
               </button>,
             ],
             "className": "answers",
@@ -385,8 +485,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "5",
-                  "   ",
-                  0,
+                  <span
+                    className="hidden"
+                  >
+                    0
+                  </span>,
                 ],
                 "className": "answer-button",
                 "onClick": [Function],
@@ -394,8 +497,18 @@ ShallowWrapper {
               "ref": null,
               "rendered": Array [
                 "5",
-                "   ",
-                0,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                    "className": "hidden",
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "span",
+                },
               ],
               "type": "button",
             },
@@ -406,8 +519,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "2",
-                  "   ",
-                  0,
+                  <span
+                    className="hidden"
+                  >
+                    0
+                  </span>,
                 ],
                 "className": "answer-button",
                 "onClick": [Function],
@@ -415,8 +531,18 @@ ShallowWrapper {
               "ref": null,
               "rendered": Array [
                 "2",
-                "   ",
-                0,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                    "className": "hidden",
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "span",
+                },
               ],
               "type": "button",
             },
@@ -427,8 +553,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "4",
-                  "   ",
-                  0,
+                  <span
+                    className="hidden"
+                  >
+                    0
+                  </span>,
                 ],
                 "className": "answer-button",
                 "onClick": [Function],
@@ -436,8 +565,18 @@ ShallowWrapper {
               "ref": null,
               "rendered": Array [
                 "4",
-                "   ",
-                0,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                    "className": "hidden",
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "span",
+                },
               ],
               "type": "button",
             },
@@ -448,8 +587,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "0",
-                  "   ",
-                  0,
+                  <span
+                    className="hidden"
+                  >
+                    0
+                  </span>,
                 ],
                 "className": "answer-button",
                 "onClick": [Function],
@@ -457,8 +599,18 @@ ShallowWrapper {
               "ref": null,
               "rendered": Array [
                 "0",
-                "   ",
-                0,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                    "className": "hidden",
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "span",
+                },
               ],
               "type": "button",
             },

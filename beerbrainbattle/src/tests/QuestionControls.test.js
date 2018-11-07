@@ -21,7 +21,6 @@ describe('QuestionControls', () => {
     it('should match the snapshot', () => {
       expect(wrapper).toMatchSnapshot()
     })
-  })
 
     it('should match the snapshot with players', () => {
       wrapper = shallow(<QuestionControls 
@@ -33,7 +32,7 @@ describe('QuestionControls', () => {
       />);
 
       expect(wrapper).toMatchSnapshot()
-  })
+    })
 
     it('should match the snapshot with a prize', () => {
       wrapper = shallow(<QuestionControls 
@@ -44,7 +43,7 @@ describe('QuestionControls', () => {
       />);
 
       expect(wrapper).toMatchSnapshot()
-  })
+    })
 
     it('should match the snapshot with a prize', () => {
       wrapper = shallow(<QuestionControls 
@@ -56,6 +55,82 @@ describe('QuestionControls', () => {
       />);
 
       expect(wrapper).toMatchSnapshot()
+    })
+
+    it('should toggle showCategories in state when toggleShowCategories is called', () => {
+      expect(wrapper.state('showCategories')).toEqual(false)
+
+      wrapper.instance().toggleShowCategories()
+
+      expect(wrapper.state('showCategories')).toEqual(true)
+
+      wrapper.instance().toggleShowCategories()
+
+      expect(wrapper.state('showCategories')).toEqual(false)
+    })
+
+    it('should toggle showDifficulty in state when toggleShowDifficulty is called', () => {
+      expect(wrapper.state('showDifficulty')).toEqual(false)
+
+      wrapper.instance().toggleShowDifficulty()
+
+      expect(wrapper.state('showDifficulty')).toEqual(true)
+
+      wrapper.instance().toggleShowDifficulty()
+
+      expect(wrapper.state('showDifficulty')).toEqual(false)
+    })
+
+    it('should call setDifficulty on a click', () => {
+      const spy = spyOn(wrapper.instance(), 'setDifficulty')
+
+      wrapper.instance().toggleShowDifficulty()
+
+      wrapper.find('.easy').simulate('click')
+
+      expect(spy).toHaveBeenCalled()
+    })
+
+    it('should call toggleShowDifficulty on a click', () => {
+      const spy = spyOn(wrapper.instance(), 'toggleShowDifficulty')
+      wrapper.instance().forceUpdate()
+
+      wrapper.find('.difficulty-title').simulate('click')
+
+      expect(spy).toHaveBeenCalled()
+    })
+
+    it('should call toggleShowCategories on a click', () => {
+      const spy = spyOn(wrapper.instance(), 'toggleShowCategories')
+      wrapper.instance().forceUpdate()
+
+      wrapper.find('.categories-title').simulate('click')
+
+      expect(spy).toHaveBeenCalled()
+    })
+
+    // it('should call setCategory on a click', () => {
+    //   const spy = spyOn(wrapper.instance(), 'setCategory')
+    //   wrapper.instance().forceUpdate()
+
+    //   wrapper.instance().toggleShowCategories()
+
+    //   wrapper.first('.category-option').simulate('click')
+
+    //   expect(spy).toHaveBeenCalled()
+    // })
+
+
+    it('should call handleSubmit on submit', async () => {
+      const spy = spyOn(wrapper.instance(), 'handleSubmit')
+      wrapper.instance().forceUpdate()
+
+
+      wrapper.find('form').simulate('submit')
+
+      expect(spy).toHaveBeenCalled()
+    })
+
   })
 
 
