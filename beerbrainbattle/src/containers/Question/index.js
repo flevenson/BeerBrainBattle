@@ -18,7 +18,7 @@ export const Question = (props) => {
       className='answer-button'
       key={answer}
       onClick={() => props.addVote(answer.answer)}
-      >{answer.answer}   {answer.numVotes}
+      >{answer.answer}<span className={answer.numVotes ? '' : 'hidden'}>{answer.numVotes}</span>
     </button>
   )
 

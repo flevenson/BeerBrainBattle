@@ -23,6 +23,42 @@ describe('QuestionControls', () => {
     })
   })
 
+    it('should match the snapshot with players', () => {
+      wrapper = shallow(<QuestionControls 
+        prize={ '' }
+        addPlayers={jest.fn()}
+        addPrize={jest.fn()}
+        addQuestion={jest.fn()}
+        players={4}
+      />);
+
+      expect(wrapper).toMatchSnapshot()
+  })
+
+    it('should match the snapshot with a prize', () => {
+      wrapper = shallow(<QuestionControls 
+        prize={ mockPrize }
+        addPlayers={jest.fn()}
+        addPrize={jest.fn()}
+        addQuestion={jest.fn()}
+      />);
+
+      expect(wrapper).toMatchSnapshot()
+  })
+
+    it('should match the snapshot with a prize', () => {
+      wrapper = shallow(<QuestionControls 
+        prize={ mockPrize }
+        addPlayers={jest.fn()}
+        addPrize={jest.fn()}
+        addQuestion={jest.fn()}
+        players={4}
+      />);
+
+      expect(wrapper).toMatchSnapshot()
+  })
+
+
   describe('mapStateToProps', () => {
     it('should parse the players from state', () => {
       const mockState = {

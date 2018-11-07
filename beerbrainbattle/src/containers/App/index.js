@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
-import { Route, withRouter } from 'react-router-dom';
+import { Route, withRouter, Switch } from 'react-router-dom';
 import QuestionControls from '../QuestionControls';
 import Question from '../Question';
 import Answer from '../Answer';
@@ -9,6 +9,14 @@ import GameOver from '../GameOver';
 import { connect } from 'react-redux';
 
 export const App = (props) => {
+  const noMatch = ({ location }) => (
+    <div>
+      <p> boo hoo </p>
+      <p> 404 ERROR </p>
+      <p> does not compute</p>
+    </div>
+  )
+
     return (
       <div className="App">
         <header>
@@ -23,6 +31,7 @@ export const App = (props) => {
             </span>
         </header>
         <main className='app-main'>
+        <Switch>
           <Route 
             exact path='/'
             render={() => <QuestionControls />}
@@ -39,6 +48,10 @@ export const App = (props) => {
             exact path='/gameOver'
             render={() => <GameOver />}
           />
+          <Route 
+            component={noMatch}
+          />
+        </Switch>
         </main>
         <footer>
           <h1 className={props.prize.length ? 'prize-text' : 'hidden'}>Current Prize: {props.prize}</h1>

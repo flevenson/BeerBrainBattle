@@ -121,13 +121,13 @@ export class QuestionControls extends Component {
         onSubmit={this.handleSubmit}>
         <div>
           <div className='dropdown-title' onClick={ this.toggleShowCategories}>{ category.length ? category : 'Category' }</div>
-          <ul className='category-holder'>
+          <ul className={ showCategories ? 'category-holder' : 'hidden' }>
             { categoryOptions }
           </ul>
         </div>
         <div>
           <div className='dropdown-title' onClick={ this.toggleShowDifficulty}>{ difficulty.length ? difficulty : 'Difficulty'}</div>
-          <ul>
+          <ul className={ showDifficulty? 'difficulty-holder' : 'hidden' }>
             <li 
               className={ 
                 showDifficulty 
@@ -165,7 +165,7 @@ export class QuestionControls extends Component {
           onChange={this.handleInputChange}
           name='prize'>
         </input>
-        <button className='dropdown-title' onClick={this.handleSubmit}> Battle </button>
+        <button className='dropdown-title battle-button' onClick={this.handleSubmit}> Battle </button>
       </form>
     )
   }
