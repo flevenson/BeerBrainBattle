@@ -53,6 +53,12 @@ describe('API', () => {
       expect(result.length).toEqual(expected.length)
     })
 
+    it('should return a clean set of answers when given one correct and 3 incorrect answers', () => {
+      const result = API.cleanAnswers(mockAPIQuestion.results[0].correct_answer, mockAPIQuestion.results[0].incorrect_answers)
+
+      expect(result.length).toEqual(4)
+    })
+
     // it('should throw an error if the status is not ok', () => {
     //   const expected = Error('fetch failed.')
 
