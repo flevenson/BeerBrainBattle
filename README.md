@@ -22,6 +22,8 @@ npm start
 -openTDB API (http://opentdb.com)
 
 ## See it live
+[Deployed Link](https://beerbrainbattle.herokuapp.com/)
+
 ![Home Screen](./beerbrainbattle/src/assets/homescreenshot.png "HomeScreen Screenshot")
 
 ![Question Screen](./beerbrainbattle/src/assets/question.png "HomeScreen Screenshot")
